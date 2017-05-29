@@ -3,7 +3,7 @@
   
   <url>
     <loc>http://jrliv.com/post/get-started-using-csharp-without-visual-studio/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -22,19 +22,19 @@
   </url>
   
   <url>
-    <loc>http://jrliv.com/tags/.net/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://jrliv.com/tags/c#/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://jrliv.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jrliv.com/tags/csharp/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jrliv.com/tags/dotnet/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,25 +46,25 @@
   
   <url>
     <loc>http://jrliv.com/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jrliv.com/post/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jrliv.com/tags/programming/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://jrliv.com/tags/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
