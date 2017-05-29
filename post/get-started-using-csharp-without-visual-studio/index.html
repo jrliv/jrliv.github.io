@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Get Started Using C# Without Visual Studio &middot; Jae Logan</title>
+    <meta name="author" content="Jae Logan">
+    <meta name="description" content="Jae Logan&#39;s blog about anything related to computer science and technology.">
+    <meta name="generator" content="Hugo 0.20.6" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="http://jrliv.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://jrliv.com/css/screen.css">
+    <link rel="stylesheet" href="http://jrliv.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+    <link rel="shortcut icon" type="image/x-icon" href="http://jrliv.com/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://jrliv.com/favicon.ico">
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title">Jae Logan</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Programmer. Computer Science major.</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        <li class="nav nav-current"><a href="http://jrliv.com">Blog</a></li>
+
+        
+        
+        	<li class="nav nav-current"><a href="/about/">About</a></li>
+            
+      	
+          
+    </ul>
+</nav>
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Get Started Using C# Without Visual Studio</h1>
+        <div class="post-meta">
+            <time datetime="27 May 2017">
+                27 May 2017
+            </time>
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>This will show you how to get started using the C# programming language without installing Visual Studio or any other IDE.
+C# is a great programming language to learn for anyone new to programming.</p>
+
+<p>Regardless of the language, most fundamentals behind programming can be practiced and learned using only  a text editor and the command line.
+Using the command line to compile and run code provides a faster way for new programmers to get going.
+It eliminates the tasks of having to purchase, download, and learn an IDE environment like Visual Studio.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+<li>Windows operating system</li>
+<li>Text editor</li>
+</ul>
+
+<h2 id="what-is-c">What is C#?</h2>
+
+<p>C# is a modern multi-paradigm programming language created and developed by Microsoft. It runs on the .NET framework and works with any platform.
+It has similarities to C++ and Java. C# is simple, which makes it a great language to learn how to program with.</p>
+
+<h2 id="the-net-framework">The .NET Framework</h2>
+
+<p>The Microsoft .NET Framework is a software development framework that consists of a class library called the Framework Class Library (FCL) and a runtime environment called the Common Language Runtime (CLR).
+It is used for the development and use of console, desktop, Web, and mobile applications.</p>
+
+<p>If you are using Windows 7 or higher you should already have the .NET Framework installed.
+You can make sure by checking Programs and Features in the Control Panel and see if Microsoft .NET Framework is listed.</p>
+
+<p>If you have been using your operating system for awhile and have updates installed like I do, then you may see several different versions listed.
+However, it should have Microsoft .NET Framework listed somewhere or look similar to this:</p>
+
+<p><img src="http://res.cloudinary.com/jrliv/image/upload/v1495770674/screenshot1_oragd1.jpg" alt="Screen shot of Progams and Features window" /></p>
+
+<p>If you don’t have the .NET Framework installed, you can download and install the latest version from the <a href="https://www.microsoft.com/net/download/framework" alt="Microsoft .NET download page" target="_blank">Microsoft .NET</a> download page.</p>
+
+<h2 id="add-the-c-compiler-s-path-as-an-environment-variable">Add the C# Compiler’s Path as an Environment Variable</h2>
+
+<p>Once you have the .NET Framework installed, you need to find the C# compiler and add the path as a system environment variable or else you will have to navigate to or use the full path of the C# compiler in the command prompt every time you compile and run a C# program.
+The compiler is usually located as csc.exe under the path:</p>
+
+<pre><code>C:\Windows\Microsoft.NET\Framework\YourInstalledVersionHere
+</code></pre>
+
+<p>In my case the latest version I have right now is under v4.0.30319 so the path for csc.exe on my computer is:</p>
+
+<pre><code>C:\Windows\Microsoft.NET\Framework\v4.0.30319 
+</code></pre>
+
+<p>Where your version may possibly be different. There are several different ways to access the environment variables depending on what version of Windows you are using.
+To keep things simple I’m going to add the path as a system environment variable using the command prompt by entering (<b><u>remember</u></b> to edit the end of the path):</p>
+
+<pre><code>setx Path “%PATH%;C:\Windows\Microsoft.NET\Framework\YourInstalledVersionHere”
+</code></pre>
+
+<p>Once the path is added you should see a line that says “SUCCESS: Specified value was saved.” as in the screenshot below:</p>
+
+<p><img src="http://res.cloudinary.com/jrliv/image/upload/v1495770792/screenshot2_vehyfu.jpg" alt="Screen shot of Command Prompt window" /></p>
+
+<p>Now you will need to close the command prompt and re-open it for the change to take effect.
+Once you have the command prompt re-opened, enter <i>csc</i> and you should get some output as in the screenshot below:</p>
+
+<p><img src="http://res.cloudinary.com/jrliv/image/upload/v1495770795/screenshot3_oxvmu8.jpg" alt="Screen shot of Command Prompt window" /></p>
+
+<p>If you receive an error that ‘csc’ is not recognized then you may have entered something incorrectly when you set the path to the environment variable.
+Check what you entered for the setx command and make sure you have the correct path entered.</p>
+
+<h2 id="compiling-and-running-c-programs">Compiling and Running C# Programs</h2>
+
+<p>Now that the environment variable is set we can compile and run C# programs from any directory. First we need to create a C# Program.
+Open your favorite text editor (I’m using Notepad++ for this) and save a new file as HelloWorld.cs to a location that you prefer.
+Copy and paste the following code into the file and save:</p>
+
+<pre><code>class HelloWorld
+{
+    static void Main()
+    {
+        System. Console.WriteLine(&quot;Hello world!&quot; );
+    }
+} 
+</code></pre>
+
+<p>Now in the command prompt type <i>cd</i> and enter the path to where you saved the HelloWorld.cs program.
+I saved my program under a folder I created called Csharp in the root directory so I will enter:</p>
+
+<pre><code>cd C:\Csharp 
+</code></pre>
+
+<p>To compile the program enter:</p>
+
+<pre><code>csc HelloWorld.cs
+</code></pre>
+
+<p>You should receive output similar to when you entered csc the first time except without the warnings.
+This will create a new executable file named HelloWorld.exe in the same directory.</p>
+
+<p>Now that the program is compiled you can enter <i>HelloWorld</i> to run the executable.
+You should get the same output as in the screenshot below:</p>
+
+<p><img src="http://res.cloudinary.com/jrliv/image/upload/v1495770797/screenshot4_jcfghk.jpg" alt="Screen shot of Command Prompt window" /></p>
+
+<p>When compiling your C# programs from the command prompt you can also do different things like specify an alternate location or filename for the executable file that is created by using the /out parameter like: csc /out:HW.exe HelloWorld.cs so that when you run the program you can enter HW.
+To view all of the C# compiler options enter csc /? into the command prompt.</p>
+
+<p>Now that you know how to create a C# program file, compile it, and run it, you are ready to learn more.
+If you are serious about learning how to program using C# then I recommend reading <a href="http://www.introprogramming.info/wp-content/uploads/2013/07/Books/CSharpEn/Fundamentals-of-Computer-Programming-with-CSharp-Nakov-eBook-v2013.pdf" alt="PDF for Fundamentals of Computer Programming with C#" target="_blank">Fundamentals of Computer Programming with C#</a> by <a href="http://www.nakov.com/" alt="Svetlin Nakov's Website" target="_blank">Svetlin Nakov</a> and Team.
+The book focuses more on the fundamentals of programming rather than C# and the .NET Framework specifically.
+It has problems at the end of every chapter that you can use to practice and test your knowledge.</p>
+
+<p>Another great place to start is the <a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/index" alt="Microsoft's C# Guide" target="_blank">C# Guide</a> located in the <a href="https://docs.microsoft.com/en-us/dotnet/" alt="Microsoft .NET documentation" target="_blank">Microsoft .NET Documentation</a>.
+The guide has several different sections to help new developers, developers new to C#, and experienced C# developers learn more.
+It gives you the opportunity to learn from the source itself.</p>
+
+    </section>
+
+    
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
+            <i class="fa fa-fw fa-tag"></i>
+            
+                
+                <a href="http://jrliv.com/tags/c">c# </a>
+            
+                
+                <a href="http://jrliv.com/tags/programming">programming </a>
+            
+                
+                <a href="http://jrliv.com/tags/.net">.net </a>
+            
+        </div>
+    </section>
+    
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'jrliv';
+    var disqus_identifier = 'http:\/\/jrliv.com\/post\/get-started-using-csharp-without-visual-studio\/';
+    var disqus_title = 'Get Started Using C# Without Visual Studio';
+    var disqus_url = 'http:\/\/jrliv.com\/post\/get-started-using-csharp-without-visual-studio\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <section class="share">
+    <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+    <p class="info prompt">Share</p>
+    <a href="http://twitter.com/share?text=Get%20Started%20Using%20C%23%20Without%20Visual%20Studio&url=http%3a%2f%2fjrliv.com%2fpost%2fget-started-using-csharp-without-visual-studio%2f" title="Share on Twitter"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fjrliv.com%2fpost%2fget-started-using-csharp-without-visual-studio%2f" title="Share on Facebook"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+    </a>
+    <a href="https://plus.google.com/share?url=http%3a%2f%2fjrliv.com%2fpost%2fget-started-using-csharp-without-visual-studio%2f" title="Share on Google+"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+    </a>
+</section>
+
+    <footer class="post-footer">
+        <section class="author">
+    <div class="authorimage" style="background: url(http://jrliv.com/img/avatar.jpg)"></div>
+    <h4>Jae Logan</h4>
+    <p class="bio">Programmer. Computer Science major.</p>
+    <p class="meta">
+      
+    </p>
+</section>
+    </footer>
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/jrl_iv" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/jrliv" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2017 <a href="http://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://jrliv.com/js/index.js"></script>
+<script src="http://jrliv.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100003378-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

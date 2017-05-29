@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hides on Jae Logan</title>
+    <link>http://jrliv.com/hide/</link>
+    <description>Recent content in Hides on Jae Logan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license.</copyright>
+    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://jrliv.com/hide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>http://jrliv.com/blog/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://jrliv.com/blog/</guid>
+      <description>Hello welcome to my Blog page.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://jrliv.com/contact/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://jrliv.com/contact/</guid>
+      <description>Hello welcome to my Contact page.</description>
+    </item>
+    
+  </channel>
+</rss>
