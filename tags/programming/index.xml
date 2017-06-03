@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 May 2017 17:22:19 -0400</lastBuildDate>
     
 	<atom:link href="http://jrliv.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Get Started Using C# Without Visual Studio</title>
       <link>http://jrliv.com/post/get-started-using-csharp-without-visual-studio/</link>
-      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 May 2017 17:22:19 -0400</pubDate>
       
       <guid>http://jrliv.com/post/get-started-using-csharp-without-visual-studio/</guid>
       <description>This post will show you how to get started using the C# programming language without installing Visual Studio or any other IDE. C# is a great programming language to learn for anyone new to programming.
