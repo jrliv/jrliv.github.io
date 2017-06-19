@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Sun, 28 May 2017 17:22:19 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jun 2017 22:26:28 -0400</lastBuildDate>
     
 	<atom:link href="http://jrliv.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Working with Variables in C#</title>
+      <link>http://jrliv.com/post/working-with-variables/</link>
+      <pubDate>Sun, 18 Jun 2017 22:26:28 -0400</pubDate>
+      
+      <guid>http://jrliv.com/post/working-with-variables/</guid>
+      <description>One of the first things most new programmers learn how to do is work with variables. In this post I will discuss the different types of variables in C# and describe what they are, why they are used, and how to use them.
+If you are already setup with Visual Studio or MonoDevelop on your computer, you can follow along with the post and run or modify the code snippets on your own.</description>
+    </item>
     
     <item>
       <title>Get Started Using C# Without Visual Studio</title>
