@@ -2,68 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jrliv.com/post/my-first-pull-request/</loc>
+    <loc>https://jrliv.com/post/my-first-pull-request/</loc>
     <lastmod>2017-06-29T16:06:47-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jrliv.com/post/working-with-variables/</loc>
+    <loc>https://jrliv.com/post/working-with-variables/</loc>
     <lastmod>2017-06-18T22:26:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jrliv.com/post/get-started-using-csharp-without-visual-studio/</loc>
+    <loc>https://jrliv.com/post/get-started-using-csharp-without-visual-studio/</loc>
     <lastmod>2017-05-28T17:22:19-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jrliv.com/about/</loc>
+    <loc>https://jrliv.com/about/</loc>
     <lastmod>2017-05-04T13:39:13-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://jrliv.com/categories/</loc>
+    <loc>https://jrliv.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jrliv.com/tags/csharp/</loc>
+    <loc>https://jrliv.com/tags/csharp/</loc>
     <lastmod>2017-06-18T22:26:28-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jrliv.com/tags/dotnet/</loc>
+    <loc>https://jrliv.com/tags/dotnet/</loc>
     <lastmod>2017-05-28T17:22:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jrliv.com/</loc>
+    <loc>https://jrliv.com/tags/github/</loc>
     <lastmod>2017-06-29T16:06:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jrliv.com/post/</loc>
+    <loc>https://jrliv.com/</loc>
     <lastmod>2017-06-29T16:06:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jrliv.com/tags/programming/</loc>
-    <lastmod>2017-06-18T22:26:28-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://jrliv.com/tags/programming-opensource-github/</loc>
+    <loc>https://jrliv.com/tags/opensource/</loc>
     <lastmod>2017-06-29T16:06:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jrliv.com/tags/</loc>
+    <loc>https://jrliv.com/post/</loc>
+    <lastmod>2017-06-29T16:06:47-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jrliv.com/tags/programming/</loc>
+    <lastmod>2017-06-29T16:06:47-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jrliv.com/tags/</loc>
     <lastmod>2017-06-18T22:26:28-04:00</lastmod>
     <priority>0</priority>
   </url>

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Csharp on Jae Logan</title>
-    <link>http://jrliv.com/tags/csharp/</link>
+    <link>https://jrliv.com/tags/csharp/</link>
     <description>Recent content in Csharp on Jae Logan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
     <lastBuildDate>Sun, 18 Jun 2017 22:26:28 -0400</lastBuildDate>
     
-	<atom:link href="http://jrliv.com/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jrliv.com/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Working with Variables in C#</title>
-      <link>http://jrliv.com/post/working-with-variables/</link>
+      <link>https://jrliv.com/post/working-with-variables/</link>
       <pubDate>Sun, 18 Jun 2017 22:26:28 -0400</pubDate>
       
-      <guid>http://jrliv.com/post/working-with-variables/</guid>
+      <guid>https://jrliv.com/post/working-with-variables/</guid>
       <description>One of the first things most new programmers learn how to do is work with variables. In this post I will discuss the different types of variables in C# and describe what they are, why they are used, and how to use them.
 If you are already setup with Visual Studio or MonoDevelop on your computer, you can follow along with the post and run or modify the code snippets on your own.</description>
     </item>
     
     <item>
       <title>Get Started Using C# Without Visual Studio</title>
-      <link>http://jrliv.com/post/get-started-using-csharp-without-visual-studio/</link>
+      <link>https://jrliv.com/post/get-started-using-csharp-without-visual-studio/</link>
       <pubDate>Sun, 28 May 2017 17:22:19 -0400</pubDate>
       
-      <guid>http://jrliv.com/post/get-started-using-csharp-without-visual-studio/</guid>
+      <guid>https://jrliv.com/post/get-started-using-csharp-without-visual-studio/</guid>
       <description>This post will show you how to get started using the C# programming language without installing Visual Studio or any other IDE. C# is a great programming language to learn for anyone new to programming.
 Regardless of the language, most fundamentals behind programming can be practiced and learned using only a text editor and the command line. Using the command line to compile and run code provides a faster way for new programmers to get going.</description>
     </item>

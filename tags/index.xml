@@ -2,49 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jae Logan</title>
-    <link>http://jrliv.com/tags/</link>
+    <link>https://jrliv.com/tags/</link>
     <description>Recent content in Tags on Jae Logan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
     <lastBuildDate>Sun, 18 Jun 2017 22:26:28 -0400</lastBuildDate>
     
-	<atom:link href="http://jrliv.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jrliv.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Csharp</title>
-      <link>http://jrliv.com/tags/csharp/</link>
+      <link>https://jrliv.com/tags/csharp/</link>
       <pubDate>Sun, 18 Jun 2017 22:26:28 -0400</pubDate>
       
-      <guid>http://jrliv.com/tags/csharp/</guid>
+      <guid>https://jrliv.com/tags/csharp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dotnet</title>
-      <link>http://jrliv.com/tags/dotnet/</link>
+      <link>https://jrliv.com/tags/dotnet/</link>
       <pubDate>Sun, 28 May 2017 17:22:19 -0400</pubDate>
       
-      <guid>http://jrliv.com/tags/dotnet/</guid>
+      <guid>https://jrliv.com/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://jrliv.com/tags/github/</link>
+      <pubDate>Thu, 29 Jun 2017 16:06:47 -0400</pubDate>
+      
+      <guid>https://jrliv.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opensource</title>
+      <link>https://jrliv.com/tags/opensource/</link>
+      <pubDate>Thu, 29 Jun 2017 16:06:47 -0400</pubDate>
+      
+      <guid>https://jrliv.com/tags/opensource/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>http://jrliv.com/tags/programming/</link>
-      <pubDate>Sun, 18 Jun 2017 22:26:28 -0400</pubDate>
-      
-      <guid>http://jrliv.com/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming Opensource Github</title>
-      <link>http://jrliv.com/tags/programming-opensource-github/</link>
+      <link>https://jrliv.com/tags/programming/</link>
       <pubDate>Thu, 29 Jun 2017 16:06:47 -0400</pubDate>
       
-      <guid>http://jrliv.com/tags/programming-opensource-github/</guid>
+      <guid>https://jrliv.com/tags/programming/</guid>
       <description></description>
     </item>
     

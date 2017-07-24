@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Jae Logan</title>
+    <link>https://jrliv.com/tags/github/</link>
+    <description>Recent content in Github on Jae Logan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license.</copyright>
+    <lastBuildDate>Thu, 29 Jun 2017 16:06:47 -0400</lastBuildDate>
+    
+	<atom:link href="https://jrliv.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Pull Request</title>
+      <link>https://jrliv.com/post/my-first-pull-request/</link>
+      <pubDate>Thu, 29 Jun 2017 16:06:47 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/my-first-pull-request/</guid>
+      <description>In this post I want to share my experience submitting my first pull request and contributing to open source. Honestly, my contribution wasn’t planned at all. It just kind of happened. I knew about open source software and how the idea worked but I didn&amp;rsquo;t know how to actually use git and attempt to submit a pull request to fix an issue on GitHub. The actual process itself turned out to be easier than I thought.</description>
+    </item>
+    
+  </channel>
+</rss>
