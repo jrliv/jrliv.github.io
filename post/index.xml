@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Thu, 29 Jun 2017 16:06:47 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jul 2017 10:48:35 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What Programming Language Should I Learn First</title>
+      <link>https://jrliv.com/post/what-programming-language-should-i-learn-first/</link>
+      <pubDate>Wed, 26 Jul 2017 10:48:35 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/what-programming-language-should-i-learn-first/</guid>
+      <description>I just wanted to write a quick post about my opinion of which programming language new developers should learn first. This question is so common. If you are a new developer, you might be trying to figure this question out right now. For some, this question can turn into a hurdle that they&amp;rsquo;re never able to jump over. It can be a critical question.
+Trust me when I say you aren&amp;rsquo;t alone.</description>
+    </item>
     
     <item>
       <title>My First Pull Request</title>

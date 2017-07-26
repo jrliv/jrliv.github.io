@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jrliv.com/post/what-programming-language-should-i-learn-first/</loc>
+    <lastmod>2017-07-26T10:48:35-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jrliv.com/post/my-first-pull-request/</loc>
     <lastmod>2017-06-29T16:06:47-04:00</lastmod>
   </url>
@@ -46,7 +51,7 @@
   
   <url>
     <loc>https://jrliv.com/</loc>
-    <lastmod>2017-06-29T16:06:47-04:00</lastmod>
+    <lastmod>2017-07-26T10:48:35-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -58,13 +63,13 @@
   
   <url>
     <loc>https://jrliv.com/post/</loc>
-    <lastmod>2017-06-29T16:06:47-04:00</lastmod>
+    <lastmod>2017-07-26T10:48:35-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jrliv.com/tags/programming/</loc>
-    <lastmod>2017-06-29T16:06:47-04:00</lastmod>
+    <lastmod>2017-07-26T10:48:35-04:00</lastmod>
     <priority>0</priority>
   </url>
   
