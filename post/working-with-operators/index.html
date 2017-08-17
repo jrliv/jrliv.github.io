@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>My First Pull Request - Jae Logan</title>
+    <title>Working with Operators in C# - Jae Logan</title>
     <meta name="author" content="Jae Logan">
     <meta name="description" content="Jae Logan&#39;s blog and personal website.">
     <meta name="generator" content="Hugo 0.20.6" />
@@ -65,10 +65,10 @@
     
 <article class="post">
     <header>
-        <h1 class="post-title">My First Pull Request</h1>
+        <h1 class="post-title">Working with Operators in C#</h1>
         <div class="post-meta">
 			
-				<span class="post-date">29 June 2017</span>
+				<span class="post-date">10 August 2017</span>
 			
         </div>
     </header>
@@ -76,25 +76,64 @@
     <section class="post-content">
         
 
-<p>In this post I want to share my experience submitting my first pull request and contributing to open source. Honestly, my contribution wasn’t planned at all. It just kind of happened. I knew about open source software and how the idea worked but I didn&rsquo;t know how to actually use git and attempt to submit a pull request to fix an issue on GitHub. The actual process itself turned out to be easier than I thought.</p>
+<p>Working with operators is an important part of learning how to program. Every programming language uses operators and you will need to use them in essentially every program you write. Therefore every programmer will have to learn how to use them. In this post I will write about the different types of operators in C# and describe what they are and what they do.</p>
 
-<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1498787590/firstPullRequest_h6ntqw.jpg" alt="Screenshot of my first pull request" /></p>
+<h2 id="what-is-an-operator">What is an operator?</h2>
 
-<h2 id="what-led-to-it">What led to it?</h2>
+<p>An operator is a special character that allows you to process and perform different mathematical or logical operations on <a href="https://www.jrliv.com/post/working-with-variables#datatypes" target="_blank">data types</a> and objects. Some examples of operators are the same signs that are used in every day math (+, -, *, /). These are called <i>arithmetic</i> operators. There are a few different categories and types of operators in C#.</p>
 
-<p>A few weeks ago I happened to be reading about contributing to open source and I stumbled across the website <a href="http://www.firsttimersonly.com/" alt="First Timers Only" target="_blank">First Timers Only</a>. I highly recommend checking it out if you are new to development and interested in contributing to open source. While reading through the page I eventually clicked on the link for the <a href="https://github.com/search?q=label%3Afirst-timers-only&state=open&type=Issues" alt="GitHub search for first-timers-only" target="_blank">GitHub first-timers-only label</a>. It linked me to a page on GitHub that listed the search results of issues listed with the first-timers-only label.</p>
+<h2 id="types-of-operators">Types of operators</h2>
 
-<p>While looking through the list I found <a href="https://github.com/freeCodeCamp/freeCodeCamp/issues/15208" alt="freeCodeCamp" target="_blank">an issue for freeCodeCamp</a> to add some verbiage on the code of conduct page. I knew this was something I could easily do because it didn’t involve writing any code.</p>
+<p>Here are the different types of operators:</p>
 
-<p>I’ve used <a href="https://www.freecodecamp.com/" alt="freeCodeCamp" target="_blank">freeCodeCamp</a> before and I really liked it so I was excited for the possibility of my first pull request to go to an awesome project like FCC. As you can see in the comments of the issue, I commented my suggestion for the change and then I was asked if I would make a pull request. I read the contributor’s guide and started going through the necessary steps to update, test, and submit my changes.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Operators</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arithmetic</td>
+      <td>Performs mathematical operations</td>
+      <td>-, +, *, /, %, ++, --</td>
+    </tr>
+    <tr>
+      <td>Logical</td>
+      <td>Evaluate Boolean expressions that result in true or false</td>
+      <td>&&, ||, !, ^</td>
+    </tr>
+    <tr>
+      <td>Binary</td>
+      <td>Performs operations on binary numbers</td>
+      <td>&, |, ^, ~, <<, >></td>
+    </tr>
+    <tr>
+      <td>Comparison</td>
+      <td>Compares two operands</td>
+      <td>==,!=, >, <, >=, <=</td>
+    </tr>
+    <tr>
+      <td>Assignment</td>
+      <td>Assigns values to variables</td>
+      <td>=, +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=</td>
+    </tr>
+    <tr>
+      <td>Type conversion</td>
+      <td>Converts data from one type to another</td>
+      <td>(type), as, is, typeof, sizeof</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Other operators</td>
+      <td>., new, (), [], ?:, ??</td>
+    </tr>
+    </tbody>
+</table>
 
-<h2 id="what-happened">What happened?</h2>
-
-<p>Of course, editing the file and adding the new text was easy. The part I struggled with was installing and setting up the dependencies needed to setup FCC and test the changes locally. It took me awhile to find 32 bit versions of Node.js and MongoDB, particularly MongoDB. With some help I was able to get them installed and get MongoDB running on my computer. Then I was able to test my changes locally on my computer and make sure everything looked good. After that I ran a test suite script for FCC that was included in the contributor’s guide.</p>
-
-<p>All of the tests passed so then I added, commited, and pushed the changes to my forked repo. I logged into GitHub and created the pull request. I double checked everything I had done and followed the pull request instructions to verify everything was correct. I submitted the pull request, and not long after, it was merged. I felt awesome.</p>
-
-<p>Overall submitting my first pull request was a great experience. Thanks to <a href="https://github.com/raisedadead" alt="raisedadead" target="_blank">raisedadead</a> for helping me along the way. I plan on learning JavaScript well in the future so maybe I can contribute again with some actual code next time.</p>
+<p>The data types and objects that an operator usually perfroms operations on are also known as <i>operands</i>. Operators that use one operand are called <i>unary operators</i>. Operators that use two operands are called <i>binary operators</i>. The conditional operator <b>?:</b> takes three operands and is called the <i>ternary operator</i>.</p>
 
     </section>
 
@@ -107,10 +146,7 @@
                 <a href="https://jrliv.com/tags/programming">programming, </a>
             
                 
-                <a href="https://jrliv.com/tags/opensource">opensource, </a>
-            
-                
-                <a href="https://jrliv.com/tags/github">github </a>
+                <a href="https://jrliv.com/tags/csharp">csharp </a>
             
         </div>
     </section>
@@ -118,9 +154,9 @@
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'jrliv';
-    var disqus_identifier = 'https:\/\/jrliv.com\/post\/my-first-pull-request\/';
-    var disqus_title = 'My First Pull Request';
-    var disqus_url = 'https:\/\/jrliv.com\/post\/my-first-pull-request\/';
+    var disqus_identifier = 'https:\/\/jrliv.com\/post\/working-with-operators\/';
+    var disqus_title = 'Working with Operators in C#';
+    var disqus_url = 'https:\/\/jrliv.com\/post\/working-with-operators\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -133,15 +169,15 @@
     <section class="share">
     <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
     <p class="info prompt">Share</p>
-    <a href="http://twitter.com/share?text=My%20First%20Pull%20Request&url=https%3a%2f%2fjrliv.com%2fpost%2fmy-first-pull-request%2f" title="Share on Twitter"
+    <a href="http://twitter.com/share?text=Working%20with%20Operators%20in%20C%23&url=https%3a%2f%2fjrliv.com%2fpost%2fworking-with-operators%2f" title="Share on Twitter"
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
     </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fmy-first-pull-request%2f" title="Share on Facebook"
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fworking-with-operators%2f" title="Share on Facebook"
         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
         <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
     </a>
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fmy-first-pull-request%2f" title="Share on Google+"
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fworking-with-operators%2f" title="Share on Google+"
        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
     </a>
