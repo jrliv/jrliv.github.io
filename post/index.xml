@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Thu, 10 Aug 2017 12:39:58 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jul 2017 10:48:35 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Working with Operators in C#</title>
-      <link>https://jrliv.com/post/working-with-operators/</link>
-      <pubDate>Thu, 10 Aug 2017 12:39:58 -0400</pubDate>
-      
-      <guid>https://jrliv.com/post/working-with-operators/</guid>
-      <description>Working with operators is an important part of learning how to program. Every programming language uses operators and you will need to use them in essentially every program you write. Therefore every programmer will have to learn how to use them. In this post I will write about the different types of operators in C# and describe what they are and what they do.
-What is an operator? An operator is a special character that allows you to process and perform different mathematical or logical operations on data types and objects.</description>
-    </item>
     
     <item>
       <title>What Programming Language Should I Learn First?</title>
