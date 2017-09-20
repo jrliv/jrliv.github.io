@@ -68,7 +68,7 @@
         <h1 class="post-title">Working with Operators in C#</h1>
         <div class="post-meta">
 			
-				<span class="post-date">10 August 2017</span>
+				<span class="post-date">20 September 2017</span>
 			
         </div>
     </header>
@@ -76,64 +76,122 @@
     <section class="post-content">
         
 
-<p>Working with operators is an important part of learning how to program. Every programming language uses operators and you will need to use them in essentially every program you write. Therefore every programmer will have to learn how to use them. In this post I will write about the different types of operators in C# and describe what they are and what they do.</p>
+<p>Working with operators is an important part of learning how to program. Every programming language uses operators. You will need to use them in essentially every program you write. Therefore every programmer will have to learn how to use them.</p>
+
+<p>In this post I will write about operators in C# and show examples of how to work with some of them.</p>
 
 <h2 id="what-is-an-operator">What is an operator?</h2>
 
-<p>An operator is a special character that allows you to process and perform different mathematical or logical operations on <a href="https://www.jrliv.com/post/working-with-variables#datatypes" target="_blank">data types</a> and objects. Some examples of operators are the same signs that are used in every day math (+, -, *, /). These are called <i>arithmetic</i> operators. There are a few different categories and types of operators in C#.</p>
+<p>An operator is a special character that allows you to process and perform different mathematical or logical operations on <a href="https://www.jrliv.com/post/working-with-variables#datatypes" target="_blank">data types</a> and objects. Some examples of operators are the same signs that are used in every day math (+, -, *, /). These are called <i>arithmetic</i> operators. There are several different categories and types of operators in C#.</p>
 
 <h2 id="types-of-operators">Types of operators</h2>
 
-<p>Here are the different types of operators:</p>
+<p>Here are the different types of operators used in C#:</p>
 
 <table>
   <thead>
     <tr>
       <th>Category</th>
-      <th>Description</th>
+        <th>Description</th>
       <th>Operators</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Arithmetic</td>
-      <td>Performs mathematical operations</td>
-      <td>-, +, *, /, %, ++, --</td>
+      <td>Performs mathematical operations.</td>
+        <td>-, +, *, /, %, ++, --</td>
     </tr>
     <tr>
       <td>Logical</td>
-      <td>Evaluate Boolean expressions that result in true or false</td>
-      <td>&&, ||, !, ^</td>
+      <td>Evaluates Boolean expressions that result in true or false.</td>
+        <td>&&, ||, !, ^</td>
     </tr>
     <tr>
-      <td>Binary</td>
-      <td>Performs operations on binary numbers</td>
-      <td>&, |, ^, ~, <<, >></td>
+      <td>Bitwise</td>
+      <td>Performs operations on binary numbers.</td>
+        <td>&, |, ^, ~, <<, >></td>
     </tr>
     <tr>
       <td>Comparison</td>
-      <td>Compares two operands</td>
-      <td>==,!=, >, <, >=, <=</td>
+      <td>Compares two operands.</td>
+        <td>==, !=, >, <, >=, <=</td>
     </tr>
     <tr>
       <td>Assignment</td>
-      <td>Assigns values to variables</td>
-      <td>=, +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=</td>
+      <td>Assigns values to variables.</td>
+        <td>=, +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=</td>
     </tr>
     <tr>
       <td>Type conversion</td>
-      <td>Converts data from one type to another</td>
-      <td>(type), as, is, typeof, sizeof</td>
+      <td>Converts data from one type to another.</td>
+        <td>(type), as, is, typeof, sizeof</td>
     </tr>
     <tr>
       <td>Other</td>
-      <td>Other operators</td>
-      <td>., new, (), [], ?:, ??</td>
+      <td>Other operators.</td>
+        <td>., new, (), [], ?:, ??</td>
     </tr>
     </tbody>
 </table>
 
-<p>The data types and objects that an operator usually perfroms operations on are also known as <i>operands</i>. Operators that use one operand are called <i>unary operators</i>. Operators that use two operands are called <i>binary operators</i>. The conditional operator <b>?:</b> takes three operands and is called the <i>ternary operator</i>.</p>
+<h2 id="number-of-operands">Number of operands</h2>
+
+<p>Operators are also classified into different types based on the number of operands that they can take.</p>
+
+<p>Operators that use <u>one</u> operand are called <i>unary operators</i>.</p>
+
+<p>Operators that use <u>two</u> operands are called <i>binary operators</i>.</p>
+
+<p>The conditional operator <b>?:</b> takes <u>three</u> operands. It&rsquo;s also called the <i>ternary operator</i>.</p>
+
+<h2 id="example-of-using-operators">Example of using operators</h2>
+
+<pre><code>int x = 10;
+int y = 2;
+
+Console.WriteLine(x + y);   // Output: 12
+Console.WriteLine(x - y);   // Output: 8
+Console.WriteLine(x / y);  // Output: 5
+
+x = x - 5;
+Console.WriteLine(x);  // Output: 5
+Console.WriteLine(x * 5);  // Output: 25
+
+y = 5 + 5;
+Console.WriteLine(x * y); // Output: 50
+Console.WriteLine(y % 3);  // Output: 1
+</code></pre>
+
+<h2 id="operator-precedence">Operator precedence</h2>
+
+<p>Operators should not be treated equally. They have a defined precedence which gives some operators priority over others. This is also known as the order of operations (PEMDAS).</p>
+
+<p>It helps to know the order of operations when an expression contains more than one operator. Just like the order of operations in math, operators with higher precedence are calculated before the operators with a lower precedence. The parentheses operators () can be used to change the precedence. For example <b>2 + 4</b> will be calculated first in the expression <b>6 * (2 + 4)</b>.</p>
+
+<p>Parentheses have the highest order of precedence. Arithmetic operators usually have the next highest order of precedence followed by binary, comparison, logical, and assignment operators.</p>
+
+<p>The most helpful thing to remember is <u>PEMDAS</u>: <b>P</b>arentheses first, then <b>E</b>xponents, then <b>M</b>ultiplication and <b>D</b>ivision, then <b>A</b>ddition and <b>S</b>ubtraction</p>
+
+<p>When all operators in an expression have the same level of precedence, the order of operations is from left to right.</p>
+
+<h3 id="example-of-using-precedence">Example of using precedence</h3>
+
+<pre><code>int x = 10;
+int y = 20;
+
+Console.WriteLine(x + y / 5);   // Output: 14
+Console.WriteLine((x + y) / 5); // Output: 6
+Console.WriteLine(x + y - 5);   // Output: 25
+</code></pre>
+
+<p>In the example above the first result you get from the expression <b>x + y / 5</b> is 14. Using the mathematical order of operations, the value of y (20) is divided by 5 first since division has a higher priority. Then the value of x (10) is added, giving you a result of 14.</p>
+
+<p>The second expression <b>(x + y) / 5</b> gives you a result of 6. This is because the parentheses changed the precedence and gave <b>x + y</b> priority, causing it to calculate the addition before the division.</p>
+
+<p>The last expression <b>x + y - 5</b> returns a value of 25. The order of operations occurs from left to right since both operators have the same level of precedence.</p>
+
+<p>This post touches the surface of working with operators in C#. I could definitely go on and write more but I think the post would become way too long. I plan on drilling into the categories of operators and sharing more examples in future posts.</p>
 
     </section>
 
