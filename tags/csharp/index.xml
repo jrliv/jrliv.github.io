@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Wed, 20 Sep 2017 12:39:58 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 25 Sep 2017 08:16:41 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Arithmetic Operators in C#</title>
+      <link>https://jrliv.com/post/arithmetic-operators/</link>
+      <pubDate>Mon, 25 Sep 2017 08:16:41 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/arithmetic-operators/</guid>
+      <description>Arithmetic operators are the most common operators used in programming. They perform mathematical operations on numerical values and return a numerical result. They are the same signs and operations that are used in math and everyday life.
+If you aren&amp;rsquo;t generally familiar with operators and precedence in programming, then I suggest that you check out my previous blog post on Working with Operators in C#.
+Here are the arithmetic operators used in C#:</description>
+    </item>
     
     <item>
       <title>Working with Operators in C#</title>
