@@ -50,11 +50,10 @@ What is an operator? An operator is a special character that allows you to proce
       <pubDate>Mon, 07 Aug 2017 13:39:13 -0400</pubDate>
       
       <guid>https://jrliv.com/projects/</guid>
-      <description>These are a few .NET side projects that I&amp;rsquo;ve done for college classes and for fun. If you want to see all of my projects and source code check out my GitHub repos.
+      <description>These are a few .NET projects that I&amp;rsquo;ve done. Some were done as side projects for fun and learning while others I&amp;rsquo;ve done for class assignments. If you want to see all of my projects and work check out my GitHub repositories.
 Calculator A WPF desktop calculator created using C# .NET.
  Donation App A WPF desktop application created using C# .NET.
- Hourly Wage Calculator A WPF desktop application created using C# .NET.
- Checking Account Balance A Windows Forms desktop application created using Visual Basic .</description>
+ Hourly Wage Calculator A WPF desktop application created using C# .</description>
     </item>
     
     <item>
