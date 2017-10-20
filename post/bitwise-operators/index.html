@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Bitwise Operators in C# - Jae Logan</title>
+    <meta name="author" content="Jae Logan">
+    <meta name="description" content="Jae Logan&#39;s blog and personal website.">
+    <meta name="generator" content="Hugo 0.20.6" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://jrliv.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://jrliv.com/css/screen.css">
+    <link rel="stylesheet" href="https://jrliv.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title">Jae Logan</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Programmer. Computer Science major.</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        <li class="nav nav-current"><a href="https://jrliv.com">Blog</a></li>
+		
+		<li class="nav nav-current"><a href="/archive">Archive</a></li>
+		
+		<li class="nav nav-current"><a href="/projects">Projects</a></li>
+		
+		<li class="nav nav-current"><a href="/about">About</a></li>
+
+        
+    </ul>
+</nav>
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Bitwise Operators in C#</h1>
+        <div class="post-meta">
+			
+				<span class="post-date">20 October 2017</span>
+			
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>Bitwise operators perform calculations on binary numbers. If you don&rsquo;t know what binary numbers are, they are a series of ones and zeros that represent numerical data. For example, the number 20 is represented as 00010100 in binary. All data in computers are represented by the binary numeral system.</p>
+
+<p>I plan on writing a post in the future about numeral systems but for now, if you want to learn more there are tons of other articles and resources all over the Internet that you can read and use to learn about the binary numeral system.</p>
+
+<p>Here are the bitwise operators used in C#:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operand</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&</td>
+      <td>Bitwise AND operator. Places a bit in the result if it exists in the same place in <u>both</u> operands.</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>Bitwise OR operator. Places a bit in the result if it exists in <u>either</u> operand.</td>
+    </tr>
+      <tr>
+      <td>^</td>
+      <td>Bitwise XOR operator. Places the bit in the result if it's set in <u>one</u> operand but not both.</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>Bitwise negation operator. Flips the bit of an operand.</td>
+    </tr> 
+    <tr>
+      <td><<</td>
+      <td>Bitwise shift left operator. Shifts the value of the left operand to the left by the value in the right operand.</td>
+    </tr>
+    <tr>
+      <td>>></td>
+      <td>Bitwise shift right operator. Shifts the value of the left operand to the right by the value in the right operand.</td>
+    </tr> 
+    </tbody>
+</table>
+
+<h3 id="example-using-binary-operators">Example using binary operators</h3>
+
+<pre><code>byte x = 10;    //  00001010    
+byte y = 5; //  00000101    
+
+Console.WriteLine(x &amp; y);   //  Output: 0
+Console.WriteLine(x | y);   //  Output: 15 (which is 00001111)
+Console.WriteLine(x ^ y);   //  Output: 15 (which is 00001111) 
+Console.WriteLine(~x &amp; y);  //  Output: 5 (which is 00000101) 
+Console.WriteLine(x &lt;&lt; y);  //  Output: 320 (which is 101000000)
+Console.WriteLine(x &gt;&gt; 1);  //  Output: 5 (which is 00000101)
+Console.WriteLine(y &gt;&gt; 2);  //  Output: 1 (which is 00000001)
+</code></pre>
+
+    </section>
+
+    
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
+            <i class="fa fa-fw fa-tag"></i>
+            
+                
+                <a href="https://jrliv.com/tags/programming">programming, </a>
+            
+                
+                <a href="https://jrliv.com/tags/csharp">csharp </a>
+            
+        </div>
+    </section>
+    
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'jrliv';
+    var disqus_identifier = 'https:\/\/jrliv.com\/post\/bitwise-operators\/';
+    var disqus_title = 'Bitwise Operators in C#';
+    var disqus_url = 'https:\/\/jrliv.com\/post\/bitwise-operators\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <section class="share">
+    <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+    <p class="info prompt">Share</p>
+    <a href="http://twitter.com/share?text=Bitwise%20Operators%20in%20C%23&url=https%3a%2f%2fjrliv.com%2fpost%2fbitwise-operators%2f" title="Share on Twitter"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fbitwise-operators%2f" title="Share on Facebook"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+    </a>
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fbitwise-operators%2f" title="Share on Google+"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+    </a>
+</section>
+
+    <footer class="post-footer">
+        <section class="author">
+    <div class="authorimage" style="background: url(https://jrliv.com/img/avatar.jpg)"></div>
+    <h4>Jae Logan</h4>
+    <p class="bio">Programmer. Computer Science major.</p>
+    <p class="meta">
+      
+    </p>
+</section>
+    </footer>
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/jrl_iv" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/jrliv" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2017 <a href="https://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://jrliv.com/js/index.js"></script>
+<script src="https://jrliv.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100003378-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

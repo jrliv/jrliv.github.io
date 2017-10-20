@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Fri, 06 Oct 2017 22:36:44 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 20 Oct 2017 09:06:00 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bitwise Operators in C#</title>
+      <link>https://jrliv.com/post/bitwise-operators/</link>
+      <pubDate>Fri, 20 Oct 2017 09:06:00 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/bitwise-operators/</guid>
+      <description>Bitwise operators perform calculations on binary numbers. If you don&amp;rsquo;t know what binary numbers are, they are a series of ones and zeros that represent numerical data. For example, the number 20 is represented as 00010100 in binary. All data in computers are represented by the binary numeral system.
+I plan on writing a post in the future about numeral systems but for now, if you want to learn more there are tons of other articles and resources all over the Internet that you can read and use to learn about the binary numeral system.</description>
+    </item>
     
     <item>
       <title>Logical Operators in C#</title>

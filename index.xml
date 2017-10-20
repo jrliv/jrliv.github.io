@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Fri, 06 Oct 2017 22:36:44 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 20 Oct 2017 09:06:00 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bitwise Operators in C#</title>
+      <link>https://jrliv.com/post/bitwise-operators/</link>
+      <pubDate>Fri, 20 Oct 2017 09:06:00 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/bitwise-operators/</guid>
+      <description>Bitwise operators perform calculations on binary numbers. If you don&amp;rsquo;t know what binary numbers are, they are a series of ones and zeros that represent numerical data. For example, the number 20 is represented as 00010100 in binary. All data in computers are represented by the binary numeral system.
+I plan on writing a post in the future about numeral systems but for now, if you want to learn more there are tons of other articles and resources all over the Internet that you can read and use to learn about the binary numeral system.</description>
+    </item>
     
     <item>
       <title>Logical Operators in C#</title>
@@ -51,7 +61,7 @@ What is an operator? An operator is a special character that allows you to proce
       
       <guid>https://jrliv.com/archive/</guid>
       <description> These are all of my blog posts organized by date from the most recent to the oldest. You can also use the tags page to filter posts by a specific tag.
-2017  10/6/2017 - Logical Operators in C# 9/25/2017 - Arithmetic Operators in C# 9/20/2017 - Working with Operators in C# 7/26/2017 - What Programming Language Should I Learn First? 6/29/2017 - My First Pull Request 6/18/2017 - Working with Variables in C# 5/28/2017 - Get Started Using C# Without Visual Studio  </description>
+2017  10/20/2017 - Bitwise Operators in C# 10/6/2017 - Logical Operators in C# 9/25/2017 - Arithmetic Operators in C# 9/20/2017 - Working with Operators in C# 7/26/2017 - What Programming Language Should I Learn First? 6/29/2017 - My First Pull Request 6/18/2017 - Working with Variables in C# 5/28/2017 - Get Started Using C# Without Visual Studio  </description>
     </item>
     
     <item>
