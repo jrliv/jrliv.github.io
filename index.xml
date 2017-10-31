@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Fri, 20 Oct 2017 09:06:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 24 Oct 2017 12:33:38 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Comparison Operators</title>
+      <link>https://jrliv.com/post/comparison-operators/</link>
+      <pubDate>Tue, 24 Oct 2017 12:33:38 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/comparison-operators/</guid>
+      <description>Comparison operators are used to compare two operands and return a Boolean result.
+Here are the comparison operators used in C#:
+   Operand Description      Greater than operator. If the operand on the left is greater than the operand on the right, then the condition is true.    Less than operator. If the operand on the left is less than the operand on the right, then the condition is true.</description>
+    </item>
     
     <item>
       <title>Bitwise Operators in C#</title>
@@ -121,9 +132,8 @@ Regardless of the language, most fundamentals behind programming can be practice
       <pubDate>Thu, 04 May 2017 13:39:13 -0400</pubDate>
       
       <guid>https://jrliv.com/about/</guid>
-      <description>I’m a computer science student and a programmer. Most of my programming and development experience is with C# and the .NET Framework. C# is my favorite programming language right now.
-I&amp;rsquo;ve also played with all kinds of other languages such as C, C++, Java, VB.NET, Python, JavaScript, PHP, Scheme, Clojure, and COBOL. Out of those languages I&amp;rsquo;m most familiar with C, Java, and VB.NET.
-I&amp;rsquo;ve worked on the front end as well with HTML, CSS, and Bootstrap.</description>
+      <description>I&amp;rsquo;m Jae. I’m a programmer and a computer science student at the University of Illinois Springfield. Most of my programming and development experience is with C# and the .NET Framework. C# is my favorite programming language right now.
+I&amp;rsquo;ve also played with all kinds of other languages such as C, C++, Java, VB.NET, Python, JavaScript, PHP, Scheme, Clojure, and COBOL. Out of those languages I&amp;rsquo;m most familiar with C, Java, and VB.</description>
     </item>
     
   </channel>
