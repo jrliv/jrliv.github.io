@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Tue, 24 Oct 2017 12:33:38 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jan 2018 12:33:38 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,12 +15,12 @@
     <item>
       <title>Comparison Operators in C#</title>
       <link>https://jrliv.com/post/comparison-operators/</link>
-      <pubDate>Tue, 24 Oct 2017 12:33:38 -0400</pubDate>
+      <pubDate>Fri, 12 Jan 2018 12:33:38 -0400</pubDate>
       
       <guid>https://jrliv.com/post/comparison-operators/</guid>
-      <description>Comparison operators are used to compare two operands and return a Boolean result.
-Here are the comparison operators used in C#:
-   Operand Description      Greater than operator. If the operand on the left is greater than the operand on the right, then the condition is true.    Less than operator. If the operand on the left is less than the operand on the right, then the condition is true.</description>
+      <description>Comparison operators are used to compare two operands and return a Boolean result (true or false). They can be used to control the flow of a program by determining if the execution of a conditional statement or loop should stop or continue based on the result of the comparison.
+Comparison operators are also known as relational operators, as they define the relation between two operands when used.
+If you aren&amp;rsquo;t generally familiar with operators and precedence in programming, then I suggest that you check out my blog post on Working with Operators in C#.</description>
     </item>
     
     <item>
