@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Assignment Operators in C# - Jae Logan</title>
+    <meta name="author" content="Jae Logan">
+    <meta name="description" content="Jae Logan&#39;s blog and personal website.">
+    <meta name="generator" content="Hugo 0.32.4" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://jrliv.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://jrliv.com/css/screen.css">
+    <link rel="stylesheet" href="https://jrliv.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title">Jae Logan</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        <li class="nav nav-current"><a href="https://jrliv.com">Blog</a></li>
+		
+		<li class="nav nav-current"><a href="/archive">Archive</a></li>
+		
+		<li class="nav nav-current"><a href="/projects">Projects</a></li>
+		
+		<li class="nav nav-current"><a href="/about">About</a></li>
+
+        
+    </ul>
+</nav>
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Assignment Operators in C#</h1>
+        <div class="post-meta">
+			
+				<span class="post-date">16 January 2018</span>
+			
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>Assignment operators are used for assigning a value to a variable. In C# the assignment operator is the equal sign (=). It&rsquo;s often used as a suffix in combination with an arithmetic operator to perform an operation on an existing variable (typically used as the left operand) and assign the result to itself. These operators are also known as compound assignment operators.</p>
+
+<p>If you aren&rsquo;t generally familiar with operators and precedence in programming, then I suggest that you check out my blog post on <a href="https://jrliv.com/post/working-with-operators/" alt="Working with Operators in C#" target="_blank">Working with Operators in C#</a>.</p>
+
+<p>There are assignment operators for each <a href="https://jrliv.com/post/bitwise-operators/" alt="Working with Operators in C#" target="_blank">bitwise</a> operator. Here are the assignment operators used in C#:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operand</th>
+        <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>=</td>
+      <td>Assignment operator. Assigns the value of the operand on the right to the variable on the left.</td>
+    </tr>
+    <tr>
+      <td>+=</td>
+      <td>Compound addition operator. Adds the right operand to the left and assigns the result to the left variable.</td>
+    </tr>
+      <tr>
+      <td>-=</td>
+      <td>Compound subtraction operator. Subtracts the right operand to the left and assigns the result to the left variable.</td>
+    </tr>
+    <tr>
+      <td>*=</td>
+      <td>Compound multiplication operator. Multiplies the right operand by the left and assigns the result to the left variable.</td>
+    </tr>
+    <tr>
+      <td>/=</td>
+      <td>Compound division operator. Divides the right operand by the left and assigns the result to the left variable.</td>
+    </tr>
+    <tr>
+      <td>%=</td>
+      <td>Compound modulus operator. Divides the right operand by the left to find the remainder and assign the result to the left variable.</td>
+    </tr>
+    <tr>
+      <td>&=</td>
+      <td>Compound AND operator. Performs the bitwise AND operation on numerical operands and the logical AND operation on boolean operands.</td>
+    </tr>
+    <tr>
+      <td>|=</td>
+      <td>Compound OR operator. Performs the bitwise OR operation on numerical operands and the logical OR operation on boolean operands.</td>
+    </tr>       
+    <tr>
+      <td>^=</td>
+      <td>Compound XOR operator. Performs the bitwise XOR operation on numerical operands and the logical XOR operation on boolean operands.</td>
+    </tr> 
+    <tr>
+      <td><<=</td>
+      <td>Compound left shift operator. Shifts the left operand to the left by the value in the right operand.</td>
+    </tr>   
+    <tr>
+      <td>>>=</td>
+      <td>Compound right shift operator. Shifts the left operand to the right by the value in the right operand.</td>
+    </tr>       
+    </tbody>
+</table>
+
+<h3 id="example-using-assignment-operators">Example using assignment operators</h3>
+
+<pre><code>int x = 5;
+int y = 10;
+
+x += 5;
+Console.WriteLine(x);   // Output: 10
+
+y -= 5;
+Console.WriteLine(y);  // Output: 5
+
+x *= y;
+Console.WriteLine(x);  // Output: 50
+</code></pre>
+
+    </section>
+
+    
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
+            <i class="fa fa-fw fa-tag"></i>
+            
+                
+                <a href="https://jrliv.com/tags/programming">programming, </a>
+            
+                
+                <a href="https://jrliv.com/tags/csharp">csharp </a>
+            
+        </div>
+    </section>
+    
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jrliv" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <section class="share">
+    <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+    <p class="info prompt">Share</p>
+    <a href="http://twitter.com/share?text=Assignment%20Operators%20in%20C%23&url=https%3a%2f%2fjrliv.com%2fpost%2fassignment-operators%2f" title="Share on Twitter"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fassignment-operators%2f" title="Share on Facebook"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+    </a>
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fassignment-operators%2f" title="Share on Google+"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+    </a>
+</section>
+
+    <footer class="post-footer">
+        <section class="author">
+    <div class="authorimage" style="background: url(https://jrliv.com/img/avatar.jpg)"></div>
+    <h4>Jae Logan</h4>
+    <p class="bio">Computer Technician. Programmer. CS Student.</p>
+    <p class="meta">
+      
+    </p>
+</section>
+    </footer>
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/jrl_iv" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      <a href="//www.linkedin.com/in/jrliv" target="_blank" title="linkedIn"><i class="fa fa-2x fa-fw fa-linkedin"></i> <span class="hidden">LinkedIn</span></a>&nbsp;
+      
+      
+      
+      
+      
+      <a href="//github.com/jrliv" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2018 <a href="https://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://jrliv.com/js/index.js"></script>
+<script src="https://jrliv.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100003378-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

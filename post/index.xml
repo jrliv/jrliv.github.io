@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Fri, 12 Jan 2018 12:33:38 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jan 2018 07:46:41 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Assignment Operators in C#</title>
+      <link>https://jrliv.com/post/assignment-operators/</link>
+      <pubDate>Tue, 16 Jan 2018 07:46:41 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/assignment-operators/</guid>
+      <description>Assignment operators are used for assigning a value to a variable. In C# the assignment operator is the equal sign (=). It&amp;rsquo;s often used as a suffix in combination with an arithmetic operator to perform an operation on an existing variable (typically used as the left operand) and assign the result to itself. These operators are also known as compound assignment operators.
+If you aren&amp;rsquo;t generally familiar with operators and precedence in programming, then I suggest that you check out my blog post on Working with Operators in C#.</description>
+    </item>
     
     <item>
       <title>Comparison Operators in C#</title>
