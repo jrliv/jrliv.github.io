@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 07:46:41 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What I&#39;ve Been Up To</title>
+      <link>https://jrliv.com/post/what-ive-been-up-to/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jrliv.com/post/what-ive-been-up-to/</guid>
+      <description>My goal with this website was to document and share everything that I learn related to programming and technology. If you look around, it&amp;rsquo;s obvious that I haven&amp;rsquo;t done much of that since I started this site in May of 2017. I haven&amp;rsquo;t posted or done a thing since January of last year. So in an effort to get things back swinging here, I decided to make a quick post about what I&amp;rsquo;ve been up to in my technical life for the last year and 4 months.</description>
+    </item>
     
     <item>
       <title>Assignment Operators in C#</title>
@@ -82,7 +91,7 @@ What is an operator? An operator is a special character that allows you to proce
       
       <guid>https://jrliv.com/archive/</guid>
       <description>These are all of my blog posts organized by date from the most recent to the oldest. You can also use the tags page to filter posts by a specific tag.
-2018  1/16/2018 - Assignment Operators in C# 1/12/2018 - Comparison Operators in C#  2017  10/20/2017 - Bitwise Operators in C# 10/6/2017 - Logical Operators in C# 9/25/2017 - Arithmetic Operators in C# 9/20/2017 - Working with Operators in C# 7/26/2017 - What Programming Language Should I Learn First?</description>
+2019  6/01/2019 - What I&amp;rsquo;ve Been Up To  2018  1/16/2018 - Assignment Operators in C# 1/12/2018 - Comparison Operators in C#  2017  10/20/2017 - Bitwise Operators in C# 10/6/2017 - Logical Operators in C# 9/25/2017 - Arithmetic Operators in C# 9/20/2017 - Working with Operators in C# 7/26/2017 - What Programming Language Should I Learn First?</description>
     </item>
     
     <item>
