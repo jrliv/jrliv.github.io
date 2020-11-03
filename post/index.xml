@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jan 2018 07:46:41 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>What I&#39;ve Been Up To</title>
-      <link>https://jrliv.com/post/what-ive-been-up-to/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jrliv.com/post/what-ive-been-up-to/</guid>
-      <description>My goal with this website was to document and share everything that I learn related to programming and technology. If you look around, it&amp;rsquo;s obvious that I haven&amp;rsquo;t done much of that since I started this site in May of 2017. I haven&amp;rsquo;t posted or done a thing since January of last year. So in an effort to get things back swinging here, I decided to make a quick post about what I&amp;rsquo;ve been up to in my technical life for the last year and 4 months.</description>
-    </item>
     
     <item>
       <title>Assignment Operators in C#</title>
