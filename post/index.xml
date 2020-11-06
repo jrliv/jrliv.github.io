@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 07:46:41 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2020 20:28:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Redirect to Another URL Path in IIS</title>
+      <link>https://jrliv.com/post/redirect-to-another-url-in-iis/</link>
+      <pubDate>Thu, 05 Nov 2020 20:28:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/redirect-to-another-url-in-iis/</guid>
+      <description>In a few steps this post will show how to use HTTP Redirect in IIS to specify rules that can redirect requests to another file path or website.
+Prerequisites  Windows operating system Internet Information Services (IIS)  Steps  Open IIS. In the left pane under &amp;lsquo;Sites&amp;rsquo;, select the Web site or application that you want to redirect from.
+ Double click on &amp;lsquo;HTTP Redirect&amp;rsquo; in the main pane under the &amp;lsquo;IIS&amp;rsquo; section:</description>
+    </item>
     
     <item>
       <title>Assignment Operators in C#</title>

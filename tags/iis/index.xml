@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dotnet on Jae Logan</title>
-    <link>https://jrliv.com/tags/dotnet/</link>
-    <description>Recent content in Dotnet on Jae Logan</description>
+    <title>Iis on Jae Logan</title>
+    <link>https://jrliv.com/tags/iis/</link>
+    <description>Recent content in Iis on Jae Logan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
     <lastBuildDate>Thu, 05 Nov 2020 20:28:19 -0400</lastBuildDate>
     
-	<atom:link href="https://jrliv.com/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jrliv.com/tags/iis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
       <description>In a few steps this post will show how to use HTTP Redirect in IIS to specify rules that can redirect requests to another file path or website.
 Prerequisites  Windows operating system Internet Information Services (IIS)  Steps  Open IIS. In the left pane under &amp;lsquo;Sites&amp;rsquo;, select the Web site or application that you want to redirect from.
  Double click on &amp;lsquo;HTTP Redirect&amp;rsquo; in the main pane under the &amp;lsquo;IIS&amp;rsquo; section:</description>
-    </item>
-    
-    <item>
-      <title>Get Started Using C# Without Visual Studio</title>
-      <link>https://jrliv.com/post/get-started-using-csharp-without-visual-studio/</link>
-      <pubDate>Sun, 28 May 2017 17:22:19 -0400</pubDate>
-      
-      <guid>https://jrliv.com/post/get-started-using-csharp-without-visual-studio/</guid>
-      <description>This post will show you how to get started using the C# programming language without installing Visual Studio or any other IDE. C# is a great programming language to learn for anyone new to programming.
-Regardless of the language, most fundamentals behind programming can be practiced and learned using only a text editor and the command line. Using the command line to compile and run code provides a faster way for new programmers to get going.</description>
     </item>
     
   </channel>
