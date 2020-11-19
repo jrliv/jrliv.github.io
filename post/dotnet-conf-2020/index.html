@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100003378-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-100003378-1');
+    </script>
+
+    <script data-ad-client="ca-pub-2144632978396387" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>What I Learned from .NET Conf 2020 - Jae Logan</title>
+    <meta name="author" content="Jae Logan">
+    <meta name="description" content="Jae Logan&#39;s blog and personal website.">
+    <meta name="generator" content="Hugo 0.32.4" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://jrliv.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://jrliv.com/css/screen.css">
+    <link rel="stylesheet" href="https://jrliv.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title">Jae Logan</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        <li class="nav nav-current"><a href="https://jrliv.com">Blog</a></li>
+		
+		<li class="nav nav-current"><a href="/archive">Archive</a></li>
+		
+		<li class="nav nav-current"><a href="/projects">Projects</a></li>
+		
+		<li class="nav nav-current"><a href="/about">About</a></li>
+
+        
+    </ul>
+</nav>
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">What I Learned from .NET Conf 2020</h1>
+        <div class="post-meta">
+			
+				<span class="post-date">18 November 2020</span>
+			
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1605396842/Blog%20Screenshots/dotnet-conf-2020-banner.png" alt=".NET Conference 2020 banner" />
+<span style="font-size: 11px;">Source: .NET Conf 2020</span></p>
+
+<p>Last week <a href="https://www.dotnetconf.net/" target="_blank" rel="noreferrer noopener">.NET Conf 2020</a> happened. Taking place November 10th-12th, the conference celebrated 10 years as a virtual event for developers.  This year was the first time I was able to watch most of the sessions in a timely manner so I decided to highlight what I learned.</p>
+
+<p>If you don&rsquo;t know, .NET Conf is a free, 3-day virtual developer event, co-organized by Microsoft and the .NET community. This year <a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/" target="_blank" rel="noreferrer noopener">.NET 5</a> was launched at the conference. It&rsquo;s a major release that includes tons of new features and improvements which were the main topics for most of the sessions.</p>
+
+<h2 id="net-5-released">.NET 5 Released</h2>
+
+<p>.NET 5 is the next version of .NET Core. It&rsquo;s everything that exists in .NET Core and more. .NET 5 continues Microsoft&rsquo;s effort to make .NET  a free, open-source, cross-platform framework that unifies desktop, Web, cloud, mobile, gaming, IoT, and AI applications.</p>
+
+<p><a href="https://twitter.com/coolcsh" target="_blank" rel="noreferrer noopener">Scott Hunter</a> kicked off the conference with an <a href="https://www.youtube.com/watch?v=mS6ykjdOVRg&list=PLdo4fOcmZ0oVWop1HEOml2OdqbDs6IlcI&t=1127s" alt=".NET Conf 2020 Keynote" target="_blank" rel="noreferrer noopener">opening keynote</a> to welcome the audience to .NET 5. He talked about the new features and had some great guests join in and show off some demos.</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1605397689/Blog%20Screenshots/dotnet5_SlideJPG.jpg" alt=".NET Conf 2020 slide listing .NET 5 features" />
+<span style="font-size: 11px;">Source: .NET Conf 2020 Keynote - Welcome to .NET 5</span></p>
+
+<p>.NET 5 comes with continued improvements in overall performance. Hunter showed the improvements in performance compared to .NET Core 3.1 where .NET 5 performed 38% better with Plantext, 42% with Json serialization, and 20% with Fortunes when performing tests on TechEmpower equivalnet hardware. He also showed performance improvements in sockets on Linux and serialization of large collections and arrays.</p>
+
+<p>One thing that surprises me is the new features and updates for <a href="https://dotnet.microsoft.com/apps/desktop" target="_blank" rel="noreferrer noopener">Windows desktop applications</a>. .NET 5 continues to support Windows Forms and WPF designers. A new desktop control named <a href="https://docs.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank" rel="noreferrer noopener">WebView2</a> was introduced. It basically allows you to embed Microsoft Edge (based on Chromium) in your native desktop applications.</p>
+
+<p><a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/#clickonce" target="_blank" rel="noreferrer noopener">ClickOnce</a> application deployment was added to support publishing client applications. It gives you the ability to simply right-click on your application and publish it.</p>
+
+<p><a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/#single-file-applications" target="_blank" rel="noreferrer noopener">Single file applications</a> are a part of unifying the .NET platform by allowing applications to be published as a single file. .NET Conf 2020 had a 20 minute session that provided an <a href="https://youtu.be/JSnnRqHXmiQ?t=323" target="_blank" rel="noreferrer noopener">Overview of Single File Applications in .NET 5</a>. If you want to see the process of publishing a single file application you can skip to the demo <a href="https://youtu.be/JSnnRqHXmiQ?t=1263" target="_blank" rel="noreferrer noopener">here</a>.</p>
+
+<h2 id="c-9-released">C# 9 Released</h2>
+
+<p><a href="https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/" target="_blank" rel="noreferrer noopener">C# 9</a> was released along with .NET 5 and it has some new features in the language. It continues to try and simplify things for developers with less code, which is why I found <a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/#records" target="_blank" rel="noreferrer noopener">records</a> and <a href="https://devblogs.microsoft.com/dotnet/announcing-net-5-0/#top-level-programs" target="_blank" rel="noreferrer noopener">top-level programs</a> to be pretty cool features. Both features aim to remove some of the boilerplate code that&rsquo;s written in a lot of applications.</p>
+
+<h3 id="records">Records</h3>
+
+<p>A record is a new type of class. It&rsquo;s a reference type that&rsquo;s immutable by default. Consider the following code:</p>
+
+<pre><code>public class Person 
+{
+    public Person(string firstName, string lastName, int age)
+    {
+        FirstName = firstName;
+        LastName = lastName;
+        Age = age;
+    }
+
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+}
+</code></pre>
+
+<p>Using the record keyword, the code above can now be written with only one line of code:</p>
+
+<pre><code>public record Person(string firstName, string lastName, int age);
+</code></pre>
+
+<h3 id="top-level-statements">Top-level statements</h3>
+
+<p>Top-level statements aim to remove more unnecessary boilerplate and simplify getting a program up and running more quickly. It allows the typical structure of namespace, class, Main() method to be excluded. Consider the following code:</p>
+
+<pre><code>using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(&quot;Hello World!&quot;);
+        }
+    }
+}
+</code></pre>
+
+<p>The code above can now be written as:</p>
+
+<pre><code>using System;
+
+Console.WriteLine(&quot;Hello World!&quot;);
+</code></pre>
+
+<h2 id="visual-studio">Visual Studio</h2>
+
+<p>Visual Studio 2019 update 16.8 was also announced during the opening keynote. There&rsquo;s also a preview version of update 16.9 released as well.</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1605489883/Blog%20Screenshots/screenshot1115824.jpg" alt=".NET Conf 2020 slide showing Visual Studio updates" />
+<span style="font-size: 11px;">Source: .NET Conf 2020 Keynote - Welcome to .NET 5 </span></p>
+
+<p>As you can see .NET 5 is included and it has Linux debugging where you can build a .NET 5 project that can be ran and debugged in Linux just like Windows.</p>
+
+<p>There&rsquo;s also GitHub Codespaces. A codespace is basically a container or virtual environment hosted in the cloud. It can be configured for specific projects and applications based on how it&rsquo;s defined in the git repository. Using codespaces drastically reduces time spent on setting up and maintaining development environments. You can watch a <a href="https://youtu.be/YqeIuTYdX4c?t=370" target="_blank" rel="noreferrer noopener">demo</a> of using a codespace from the <a href="https://www.youtube.com/watch?v=YqeIuTYdX4c" target="_blank" rel="noreferrer noopener">GitHub + Visual Studio ❤ .NET</a> session.</p>
+
+<p>You can also check out the <a href="https://www.youtube.com/watch?v=E17rD75Kn9Q" target="_blank" rel="noreferrer noopener">Visual Studio 2019 and beyond</a> session to learn more about what all you can do in Visual Studio 2019.</p>
+
+<h2 id="blazor">Blazor</h2>
+
+<p>.NET Conf 2020 had tons of sessions on <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank" rel="noreferrer noopener">Blazor</a>. If you&rsquo;re like me and haven&rsquo;t heard much about Blazor, it&rsquo;s a feature of <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank" rel="noreferrer noopener">ASP.NET</a> that allows you to create interactive web UIs using only C#. It eliminates having to go back and forth between JavaScript, HTML, CSS and other front end frameworks. You can develop the front end and back end of a web application with the same developers all using C#.</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1605522805/Blog%20Screenshots/screenshot1116533.jpg" alt=".NET Conf 2020 slide showing Blazor notes" />
+<span style="font-size: 11px;">Source: .NET Conf 2020 Keynote - Welcome to .NET 5 </span></p>
+
+<p>In .NET 5, Blazor WebAssembly performance was improved across the stack. Support was added for Blazor Web Assembly Pre-rendering to gain faster load times. It supports server-side prerendering to make pages load faster on the first load, and lazy loading as well, which allows components on a page to load only as they are viewed or utilized.</p>
+
+<p>CSS isolation is included which makes it easier to manage CSS by isolating seperate CSS files for each Razor component.</p>
+
+<p>Auto-refresh is included as well so now UI changes can instantly be displayed in the browser after they are saved.</p>
+
+<p>Packages can now automatically add their own CSS and JavaScript references so you don’t have to manually reference them yourself.</p>
+
+<p>There&rsquo;s a new InputFile component that renders an input HTML element with a file type so it can be used to upload files in a web application.</p>
+
+<p>A protected browser storage feature allows Blazor applications a method of storing data locally and safely inside the browser using encryption.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Overall I thought .NET Conf 2020 was pretty cool. It was great to watch the sessions and see some of the awesome new features and technology that Microsoft is creating. I&rsquo;m definitely going to try Blazor and check out WebView2 when I have time.</p>
+
+<p>If you want to catch up on all the sessions, there&rsquo;s a <a href="https://www.youtube.com/playlist?list=PLdo4fOcmZ0oVWop1HEOml2OdqbDs6IlcI">playlist</a> of them all on the <a href="https://www.youtube.com/channel/UCvtT19MZW8dq5Wwfu6B0oxw">.NET YouTube channel</a>. You can also watch them on <a href="https://channel9.msdn.com/Events/dotnetConf/2020">Channel 9</a>.</p>
+
+    </section>
+
+    
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
+            <i class="fa fa-fw fa-tag"></i>
+            
+                
+                <a href="https://jrliv.com/tags/dotnet">dotnet </a>
+            
+        </div>
+    </section>
+    
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jrliv" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <section class="share">
+    <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+    <p class="info prompt">Share</p>
+    <a href="http://twitter.com/share?text=What%20I%20Learned%20from%20.NET%20Conf%202020&url=https%3a%2f%2fjrliv.com%2fpost%2fdotnet-conf-2020%2f" title="Share on Twitter"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fdotnet-conf-2020%2f" title="Share on Facebook"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+    </a>
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fdotnet-conf-2020%2f" title="Share on Google+"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+    </a>
+</section>
+
+    <footer class="post-footer">
+        <section class="author">
+    <div class="authorimage" style="background: url(https://jrliv.com/img/avatar.jpg)"></div>
+    <h4>Jae Logan</h4>
+    <p class="bio">.NET Software Developer</p>
+    <p class="meta">
+      
+    </p>
+</section>
+    </footer>
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/jrl_iv" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/jrliv" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2020 <a href="https://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://jrliv.com/js/index.js"></script>
+<script src="https://jrliv.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100003378-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

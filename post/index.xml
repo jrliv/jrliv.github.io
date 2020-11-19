@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Thu, 05 Nov 2020 20:28:19 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 17:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What I Learned from .NET Conf 2020</title>
+      <link>https://jrliv.com/post/dotnet-conf-2020/</link>
+      <pubDate>Wed, 18 Nov 2020 17:46:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/dotnet-conf-2020/</guid>
+      <description>Source: .NET Conf 2020
+Last week .NET Conf 2020 happened. Taking place November 10th-12th, the conference celebrated 10 years as a virtual event for developers. This year was the first time I was able to watch most of the sessions in a timely manner so I decided to highlight what I learned.
+If you don&amp;rsquo;t know, .NET Conf is a free, 3-day virtual developer event, co-organized by Microsoft and the .</description>
+    </item>
     
     <item>
       <title>How to Redirect to Another URL Path in IIS</title>

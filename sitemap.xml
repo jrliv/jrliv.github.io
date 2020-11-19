@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jrliv.com/post/dotnet-conf-2020/</loc>
+    <lastmod>2020-11-18T17:46:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jrliv.com/post/redirect-to-another-url-in-iis/</loc>
     <lastmod>2020-11-05T20:28:19-04:00</lastmod>
   </url>
@@ -85,7 +90,7 @@
   
   <url>
     <loc>https://jrliv.com/tags/dotnet/</loc>
-    <lastmod>2020-11-05T20:28:19-04:00</lastmod>
+    <lastmod>2020-11-18T17:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -103,7 +108,7 @@
   
   <url>
     <loc>https://jrliv.com/</loc>
-    <lastmod>2020-11-05T20:28:19-04:00</lastmod>
+    <lastmod>2020-11-18T17:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -115,7 +120,7 @@
   
   <url>
     <loc>https://jrliv.com/post/</loc>
-    <lastmod>2020-11-05T20:28:19-04:00</lastmod>
+    <lastmod>2020-11-18T17:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   

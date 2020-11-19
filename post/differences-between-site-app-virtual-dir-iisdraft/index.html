@@ -16,7 +16,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Bitwise Operators in C# - Jae Logan</title>
+    <title>Differences Between a Site, Application, and Virtual Directory in IIS - Jae Logan</title>
     <meta name="author" content="Jae Logan">
     <meta name="description" content="Jae Logan&#39;s blog and personal website.">
     <meta name="generator" content="Hugo 0.32.4" />
@@ -40,12 +40,12 @@
 
     <!-- Stylesheet for theme color -->
     <style type="text/css">
-    a, a:visited {color: #3498db;}
-    .pagination a {color: #3498db;}
-    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
-    a:focus, a:hover {color: #2079b4;}
-    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
-    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
 </style>
 </head>
 
@@ -75,10 +75,10 @@
     
 <article class="post">
     <header>
-        <h1 class="post-title">Bitwise Operators in C#</h1>
+        <h1 class="post-title">Differences Between a Site, Application, and Virtual Directory in IIS</h1>
         <div class="post-meta">
 			
-				<span class="post-date">20 October 2017</span>
+				<span class="post-date">10 November 2020</span>
 			
         </div>
     </header>
@@ -86,62 +86,15 @@
     <section class="post-content">
         
 
-<p>Bitwise operators perform calculations on binary numbers. If you don&rsquo;t know what binary numbers are, they are a series of ones and zeros that represent numerical data. For example, the number 20 is represented as 00010100 in binary. All data in computers are represented by the binary numeral system.</p>
+<p>I&rsquo;ve been using IIS 10 regularly over the last 2 years now and one thing that&rsquo;s always confused me was the differences between sites, applications, and virtual directories and what they are used for. In this post I will explain these objects and show them in the hierarchical tree under the &lsquo;Connections&rsquo; pane.</p>
 
-<p>I plan on writing a post in the future about numeral systems but for now, if you want to learn more there are tons of other articles and resources all over the Internet that you can read and use to learn about the binary numeral system.</p>
+<h2 id="site">Site</h2>
 
-<p>If you aren&rsquo;t generally familiar with operators and precedence in programming, then I suggest that you check out my blog post on <a href="https://jrliv.com/post/working-with-operators/" alt="Working with Operators in C#" target="_blank">Working with Operators in C#</a>.</p>
+<p>A site is a container for applications and virtual directories, and you can access it through one or more unique bindings with different port numbers. It can have multiple applications and directories.</p>
 
-<p>Here are the bitwise operators used in C#:</p>
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1498676572/screenshotPF_m2uzcz.jpg" alt="Screen shot of Progams and Features window" /></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Operand</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>&</td>
-      <td>Bitwise AND operator. Places a bit in the result if it exists in the same place in <u>both</u> operands.</td>
-    </tr>
-    <tr>
-      <td>|</td>
-      <td>Bitwise OR operator. Places a bit in the result if it exists in <u>either</u> operand.</td>
-    </tr>
-      <tr>
-      <td>^</td>
-      <td>Bitwise XOR operator. Places the bit in the result if it's set in <u>one</u> operand but not both.</td>
-    </tr>
-    <tr>
-      <td>~</td>
-      <td>Bitwise negation operator. Flips the bit of an operand.</td>
-    </tr> 
-    <tr>
-      <td><<</td>
-      <td>Bitwise shift left operator. Shifts the value of the left operand to the left by the value in the right operand.</td>
-    </tr>
-    <tr>
-      <td>>></td>
-      <td>Bitwise shift right operator. Shifts the value of the left operand to the right by the value in the right operand.</td>
-    </tr> 
-    </tbody>
-</table>
-
-<h3 id="example-using-binary-operators">Example using binary operators</h3>
-
-<pre><code>byte x = 10;    //  00001010    
-byte y = 5; //  00000101    
-
-Console.WriteLine(x &amp; y);   //  Output: 0
-Console.WriteLine(x | y);   //  Output: 15 (which is 00001111)
-Console.WriteLine(x ^ y);   //  Output: 15 (which is 00001111) 
-Console.WriteLine(~x &amp; y);  //  Output: 5 (which is 00000101) 
-Console.WriteLine(x &lt;&lt; y);  //  Output: 320 (which is 101000000)
-Console.WriteLine(x &gt;&gt; 1);  //  Output: 5 (which is 00000101)
-Console.WriteLine(y &gt;&gt; 2);  //  Output: 1 (which is 00000001)
-</code></pre>
+<p>If you don’t have the .NET Framework installed, you can download and install the latest version from the <a href="https://www.microsoft.com/net/download/framework" alt="Microsoft .NET download page" target="_blank">Microsoft .NET</a> download page.</p>
 
     </section>
 
@@ -151,10 +104,10 @@ Console.WriteLine(y &gt;&gt; 2);  //  Output: 1 (which is 00000001)
             <i class="fa fa-fw fa-tag"></i>
             
                 
-                <a href="https://jrliv.com/tags/programming">programming, </a>
+                <a href="https://jrliv.com/tags/iis">iis, </a>
             
                 
-                <a href="https://jrliv.com/tags/csharp">csharp </a>
+                <a href="https://jrliv.com/tags/dotnet">dotnet </a>
             
         </div>
     </section>
@@ -182,15 +135,15 @@ Console.WriteLine(y &gt;&gt; 2);  //  Output: 1 (which is 00000001)
     <section class="share">
     <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
     <p class="info prompt">Share</p>
-    <a href="http://twitter.com/share?text=Bitwise%20Operators%20in%20C%23&url=https%3a%2f%2fjrliv.com%2fpost%2fbitwise-operators%2f" title="Share on Twitter"
+    <a href="http://twitter.com/share?text=Differences%20Between%20a%20Site%2c%20Application%2c%20and%20Virtual%20Directory%20in%20IIS&url=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iisdraft%2f" title="Share on Twitter"
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
     </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fbitwise-operators%2f" title="Share on Facebook"
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iisdraft%2f" title="Share on Facebook"
         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
         <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
     </a>
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fbitwise-operators%2f" title="Share on Google+"
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iisdraft%2f" title="Share on Google+"
        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
     </a>
@@ -200,7 +153,7 @@ Console.WriteLine(y &gt;&gt; 2);  //  Output: 1 (which is 00000001)
         <section class="author">
     <div class="authorimage" style="background: url(https://jrliv.com/img/avatar.jpg)"></div>
     <h4>Jae Logan</h4>
-    <p class="bio">.NET Software Developer</p>
+    <p class="bio">.NET Developer. Computer Science Student.</p>
     <p class="meta">
       
     </p>
