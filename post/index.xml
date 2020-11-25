@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Wed, 18 Nov 2020 17:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 12:23:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Differences Between Sites, Applications, and Virtual Directories in IIS</title>
+      <link>https://jrliv.com/post/differences-between-site-app-virtual-dir-iis/</link>
+      <pubDate>Wed, 25 Nov 2020 12:23:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/differences-between-site-app-virtual-dir-iis/</guid>
+      <description>I&amp;rsquo;ve been using IIS 10 regularly over the last 2 years now and one thing that&amp;rsquo;s always confused me was the differences between sites, applications, and virtual directories and what they&amp;rsquo;re used for.
+After doing some research on these components, I found that the easiest way to understand them from a high-level, is to think of them all as sort of a hierarchy of containers for each other. A site contains one or more applications, an application contains one or more virtual directories, and a virtual directory maps directly to a folder location on the disk.</description>
+    </item>
     
     <item>
       <title>What I Learned from .NET Conf 2020</title>

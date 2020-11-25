@@ -78,7 +78,7 @@
         <h1 class="post-title">Differences Between Sites, Applications, and Virtual Directories in IIS</h1>
         <div class="post-meta">
 			
-				<span class="post-date">01 January 0001</span>
+				<span class="post-date">25 November 2020</span>
 			
         </div>
     </header>
@@ -96,37 +96,37 @@
 
 <p>Here&rsquo;s an example of a site which is the Default Web Site that&rsquo;s setup on IIS by default:</p>
 
-<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1606182173/Blog%20Screenshots/screenshot1123832.jpg" alt="Screen shot highlighting a Site in IIS" /></p>
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1606325990/Blog%20Screenshots/screenshot11251238.jpg" alt="Screen shot highlighting a Site in IIS" /></p>
 
 <p>If you are going to host multiple sites on a server, it&rsquo;s a good idea to create different sites for each one in IIS so that they can have different application pools and bindings if necessary.</p>
 
 <h2 id="application">Application</h2>
 
-<p>An application is a container that consists of a group of files that deliver content or services on the web. It typically belongs to a specific applcation pool, which allows it to be seperated from other applications on the web server.</p>
+<p>An application is a container that consists of a group of files that deliver content or services on the web. It typically belongs to a specific application pool, which allows it to be seperated from other applications on the web server.</p>
 
 <p>Here&rsquo;s an example of an application named RideXpress that&rsquo;s been added to the Default Web Site:</p>
 
-<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1606268902/Blog%20Screenshots/screenshot1124847.jpg" alt="Screen shot highlighting an Application in IIS" /></p>
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1606325990/Blog%20Screenshots/screenshot11251237.jpg" alt="Screen shot highlighting an Application in IIS" /></p>
 
 <p>When you create an application in IIS, the application&rsquo;s path becomes part of the site&rsquo;s URL. For example, since RideXpress was added to Default Web Site and the site is using the default binding over port 80, the URL to RideXpress would look something like this: <code>http://hostname/RideXpress</code> where hostname would be the actual name of the web server.</p>
 
 <h2 id="virtual-directory">Virtual Directory</h2>
 
-<p>A virtual directory is a directory name specified in IIS to map to a physical folder located on a local or remote server. Once mapped, the directory name becomes a part of the application&rsquo;s URL. Users can enter the URL in a browser to access the content that&rsquo;s in the folder. The content in the folder can be a Web page, a list of files, or other folders nested within the folder as well.</p>
+<p>A virtual directory is a directory name specified in IIS to map to a physical folder located on a local or remote server. Once mapped, the directory name becomes a part of the application&rsquo;s URL. Users can enter the URL in a browser to access the content that&rsquo;s in the folder.</p>
 
-<p>Each application will have a virtual directory which is named the root virtual directory, which maps the application to the physical directory that contains the application&rsquo;s content. However, an application can have more than one virtual directory.&rdquo;</p>
+<p>The content in the folder can be a web page, a list of files, or other folders nested within the folder as well.</p>
 
-<p>&ldquo;For example, you might use a virtual directory when you want your application to include images from another location in the file system, but you do not want to move the image files into the physical directory that is mapped to the application’s root virtual directory. &ldquo;</p>
+<p>Each application will have a virtual directory which is named the root virtual directory. It maps the application to the physical directory where all of the application&rsquo;s files and content is located. An application can have more than one virtual directory.</p>
 
-<p>&ldquo;Directory
-Actual file path : c:\inetpub\wwwroot\subdirectory
-How is appears in the URL : <a href="http://yoursite.com/subdirectory">http://yoursite.com/subdirectory</a></p>
+<p>As an example, say you want your application to include some other media files from another folder location that&rsquo;s not included in the application&rsquo;s physical directory. You can create and use a virtual directory to point to the folder where the media is located.</p>
 
-<p>Virtual Directory
-Actual file path : c:\anywhere\whatever\files\subdirectory
-How is appears in the URL : <a href="http://yoursite.com/subdirectory">http://yoursite.com/subdirectory</a></p>
+<p>Here&rsquo;s a virtual directory named Media that was added to the RideXpress application:</p>
 
-<p>As you can see, a virtual directory is used to add a sub-directory to a site when that sub-directory is not located in the document root (in this case c:\inetpub\wwwroot).&rdquo;</p>
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1606325990/Blog%20Screenshots/screenshot11251236.jpg" alt="Screen shot highlighting a Virtual Directory in IIS" /></p>
+
+<p>The actual file path is located directly in the C: drive, which is seperate from the application&rsquo;s physical directory: <code>C:\WebMedia</code></p>
+
+<p>Since the virtual directory was named as Media, this is how it would appear in the URL: <code>http://hostname/RideXpress/Media</code></p>
 
     </section>
 
@@ -136,10 +136,7 @@ How is appears in the URL : <a href="http://yoursite.com/subdirectory">http://yo
             <i class="fa fa-fw fa-tag"></i>
             
                 
-                <a href="https://jrliv.com/tags/iis">iis, </a>
-            
-                
-                <a href="https://jrliv.com/tags/dotnet">dotnet </a>
+                <a href="https://jrliv.com/tags/iis">iis </a>
             
         </div>
     </section>
@@ -167,15 +164,15 @@ How is appears in the URL : <a href="http://yoursite.com/subdirectory">http://yo
     <section class="share">
     <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
     <p class="info prompt">Share</p>
-    <a href="http://twitter.com/share?text=Differences%20Between%20Sites%2c%20Applications%2c%20and%20Virtual%20Directories%20in%20IIS&url=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iisdraft%2f" title="Share on Twitter"
+    <a href="http://twitter.com/share?text=Differences%20Between%20Sites%2c%20Applications%2c%20and%20Virtual%20Directories%20in%20IIS&url=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iis%2f" title="Share on Twitter"
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
     </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iisdraft%2f" title="Share on Facebook"
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iis%2f" title="Share on Facebook"
         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
         <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
     </a>
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iisdraft%2f" title="Share on Google+"
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fdifferences-between-site-app-virtual-dir-iis%2f" title="Share on Google+"
        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
     </a>
