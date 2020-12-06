@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jrliv.com/post/visual-studio-missing-start-without-debug/</loc>
+    <lastmod>2020-12-06T14:46:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jrliv.com/post/differences-between-site-app-virtual-dir-iis/</loc>
     <lastmod>2020-11-25T12:23:19-04:00</lastmod>
   </url>
@@ -83,6 +88,10 @@
   </url>
   
   <url>
+    <loc>https://jrliv.com/post/operatorblogposts-draft/</loc>
+  </url>
+  
+  <url>
     <loc>https://jrliv.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -95,7 +104,7 @@
   
   <url>
     <loc>https://jrliv.com/tags/dotnet/</loc>
-    <lastmod>2020-11-18T17:46:19-04:00</lastmod>
+    <lastmod>2020-12-06T14:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -113,7 +122,7 @@
   
   <url>
     <loc>https://jrliv.com/</loc>
-    <lastmod>2020-11-25T12:23:19-04:00</lastmod>
+    <lastmod>2020-12-06T14:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -125,7 +134,7 @@
   
   <url>
     <loc>https://jrliv.com/post/</loc>
-    <lastmod>2020-11-25T12:23:19-04:00</lastmod>
+    <lastmod>2020-12-06T14:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -138,6 +147,12 @@
   <url>
     <loc>https://jrliv.com/tags/</loc>
     <lastmod>2018-01-16T07:46:41-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jrliv.com/tags/visual-studio/</loc>
+    <lastmod>2020-12-06T14:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   

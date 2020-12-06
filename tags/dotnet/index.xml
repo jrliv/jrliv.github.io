@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Wed, 18 Nov 2020 17:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 14:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Visual Studio Missing Start Without Debugging Option</title>
+      <link>https://jrliv.com/post/visual-studio-missing-start-without-debug/</link>
+      <pubDate>Sun, 06 Dec 2020 14:46:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/visual-studio-missing-start-without-debug/</guid>
+      <description>One issue I&amp;rsquo;ve experienced with Visual Studio a few times over the years is when the &amp;lsquo;Start Without Debugging&amp;rsquo; option under the Debug menu decides to disappear. I have no clue what causes this or what I&amp;rsquo;m doing to make the option hide from me. I can always still use Ctrl + F5 to run my project without debugging, but for some reason it bothers me when the option is missing so here are two ways to add it back.</description>
+    </item>
     
     <item>
       <title>What I Learned from .NET Conf 2020</title>

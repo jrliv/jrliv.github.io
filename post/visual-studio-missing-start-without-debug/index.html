@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100003378-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-100003378-1');
+    </script>
+
+    <script data-ad-client="ca-pub-2144632978396387" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Visual Studio Missing Start Without Debugging Option - Jae Logan</title>
+    <meta name="author" content="Jae Logan">
+    <meta name="description" content="Jae Logan&#39;s blog and personal website.">
+    <meta name="generator" content="Hugo 0.32.4" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://jrliv.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://jrliv.com/css/screen.css">
+    <link rel="stylesheet" href="https://jrliv.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title">Jae Logan</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        <li class="nav nav-current"><a href="https://jrliv.com">Blog</a></li>
+		
+		<li class="nav nav-current"><a href="/archive">Archive</a></li>
+		
+		<li class="nav nav-current"><a href="/projects">Projects</a></li>
+		
+		<li class="nav nav-current"><a href="/about">About</a></li>
+
+        
+    </ul>
+</nav>
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Visual Studio Missing Start Without Debugging Option</h1>
+        <div class="post-meta">
+			
+				<span class="post-date">06 December 2020</span>
+			
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>One issue I&rsquo;ve experienced with Visual Studio a few times over the years is when the &lsquo;Start Without Debugging&rsquo; option under the Debug menu decides to disappear. I have no clue what causes this or what I&rsquo;m doing to make the option hide from me. I can always still use Ctrl + F5 to run my project without debugging, but for some reason it bothers me when the option is missing so here are two ways to add it back.</p>
+
+<h2 id="add-from-commands">Add from Commands</h2>
+
+<p>The option can be added back to the Debug menu by doing the following:</p>
+
+<p>In Visual Studio, click Tools &gt; Customize:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1607289694/Blog%20Screenshots/screenshot20201206400.jpg" alt="Screenshot of Visual Studio Tools menu" /></p>
+
+<p>In the Customize window that opens, click on the Commands tab, then under &lsquo;Choose a menu or toolbar to rearrange:&lsquo;, click on the drop-down list beside &lsquo;Menu bar:&rsquo; and select Debug:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1607289946/Blog%20Screenshots/screenshot20201206412.jpg" alt="Screenshot of Visual Studio Customize window" /></p>
+
+<p>Next click on the &lsquo;Add Command&hellip;&rsquo; button.</p>
+
+<p>In the window that opens, click on Debug in the &lsquo;Categories:&rsquo; menu on the left pane. Then select Start Without Debugging from &lsquo;Commands:&rsquo; and click OK:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1607290257/Blog%20Screenshots/screenshot20201206418.jpg" alt="Screenshot of Visual Studio Add Command window" /></p>
+
+<p>If the option is not listed for you, or for some reason that just doesn&rsquo;t work, you can reset Visual Studio settings to add it back by default.</p>
+
+<h2 id="reset-visual-studio-settings">Reset Visual Studio Settings</h2>
+
+<p>In Visual Studio, click Tools &gt; Import and Export Settings:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1607133085/Blog%20Screenshots/screenshot20201203539.jpg" alt="Screenshot of Visual Studio Tools menu" /></p>
+
+<p>In the window that opens, select &lsquo;Reset all settings&rsquo; and click Next:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1607133085/Blog%20Screenshots/screenshot20201203541.jpg" alt="Screenshot of Visual Studio Import and Export Wizard window" /></p>
+
+<p>Now you can select &lsquo;Yes, save my current settings&rsquo; to make a back up of your current settings if you think you may have a setting that you don&rsquo;t want to lose. Or if you&rsquo;re like me and you don&rsquo;t care about saving any settings, you can select &lsquo;No, just reset settings, overwriting my current settings.&rsquo; and click Next:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1607133085/Blog%20Screenshots/screenshot20201203545.jpg" alt="Screenshot of Visual Studio Import and Export Wizard window" /></p>
+
+<p>Next you can choose the default collection of settings that you want to reset to. You can view a description of each collection on the right side of the window. I mostly use C# so I will select &lsquo;Visual C#&rsquo; and click Finish:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1607133085/Blog%20Screenshots/screenshot20201203547.jpg" alt="Screenshot of Visual Studio Import and Export Wizard window" /></p>
+
+<p>After clicking Finish, the wizard will reset your settings and notify you once the settings have been reset. You should then be able to see the &lsquo;Start Without Debugging&rsquo; option if you have a solution open.</p>
+
+    </section>
+
+    
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
+            <i class="fa fa-fw fa-tag"></i>
+            
+                
+                <a href="https://jrliv.com/tags/visual-studio">visual studio, </a>
+            
+                
+                <a href="https://jrliv.com/tags/dotnet">dotnet </a>
+            
+        </div>
+    </section>
+    
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jrliv" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <section class="share">
+    <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+    <p class="info prompt">Share</p>
+    <a href="http://twitter.com/share?text=Visual%20Studio%20Missing%20Start%20Without%20Debugging%20Option&url=https%3a%2f%2fjrliv.com%2fpost%2fvisual-studio-missing-start-without-debug%2f" title="Share on Twitter"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fvisual-studio-missing-start-without-debug%2f" title="Share on Facebook"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+    </a>
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fvisual-studio-missing-start-without-debug%2f" title="Share on Google+"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+    </a>
+</section>
+
+    <footer class="post-footer">
+        <section class="author">
+    <div class="authorimage" style="background: url(https://jrliv.com/img/avatar.jpg)"></div>
+    <h4>Jae Logan</h4>
+    <p class="bio">.NET Software Developer</p>
+    <p class="meta">
+      
+    </p>
+</section>
+    </footer>
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/jrl_iv" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/jrliv" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2020 <a href="https://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://jrliv.com/js/index.js"></script>
+<script src="https://jrliv.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100003378-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

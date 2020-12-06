@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Wed, 25 Nov 2020 12:23:19 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 14:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Visual Studio Missing Start Without Debugging Option</title>
+      <link>https://jrliv.com/post/visual-studio-missing-start-without-debug/</link>
+      <pubDate>Sun, 06 Dec 2020 14:46:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/visual-studio-missing-start-without-debug/</guid>
+      <description>One issue I&amp;rsquo;ve experienced with Visual Studio a few times over the years is when the &amp;lsquo;Start Without Debugging&amp;rsquo; option under the Debug menu decides to disappear. I have no clue what causes this or what I&amp;rsquo;m doing to make the option hide from me. I can always still use Ctrl + F5 to run my project without debugging, but for some reason it bothers me when the option is missing so here are two ways to add it back.</description>
+    </item>
     
     <item>
       <title>Differences Between Sites, Applications, and Virtual Directories in IIS</title>
@@ -50,7 +59,7 @@ This is my personal website where I blog about everything that I learn related t
       
       <guid>https://jrliv.com/archive/</guid>
       <description>These are all of my blog posts organized by date from the most recent to the oldest. You can also use the tags page to filter posts by a specific tag.
-2020  11/18/2020 - What I Learned from .NET Conf 2020 11/05/2020 - How to Redirect to Another URL Path in IIS  2018  01/16/2018 - Assignment Operators in C# 01/12/2018 - Comparison Operators in C#  2017  10/20/2017 - Bitwise Operators in C# 10/06/2017 - Logical Operators in C# 09/25/2017 - Arithmetic Operators in C# 09/20/2017 - Working with Operators in C# 07/26/2017 - What Programming Language Should I Learn First?</description>
+2020  12/06/2020 - Visual Studio Missing Start Without Debugging Option 11/25/2020 - Differences Between Sites, Applications, and Virtual Directories in IIS 11/18/2020 - What I Learned from .NET Conf 2020 11/05/2020 - How to Redirect to Another URL Path in IIS  2018  01/16/2018 - Assignment Operators in C# 01/12/2018 - Comparison Operators in C#  2017  10/20/2017 - Bitwise Operators in C# 10/06/2017 - Logical Operators in C# 09/25/2017 - Arithmetic Operators in C# 09/20/2017 - Working with Operators in C# 07/26/2017 - What Programming Language Should I Learn First?</description>
     </item>
     
     <item>
@@ -176,6 +185,16 @@ If you are already setup with Visual Studio or MonoDevelop on your computer, you
       <guid>https://jrliv.com/post/get-started-using-csharp-without-visual-studio/</guid>
       <description>This post will show you how to get started using the C# programming language without installing Visual Studio or any other IDE. C# is a great programming language to learn for anyone new to programming.
 Regardless of the language, most fundamentals behind programming can be practiced and learned using only a text editor and the command line. Using the command line to compile and run code provides a faster way for new programmers to get going.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jrliv.com/post/operatorblogposts-draft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jrliv.com/post/operatorblogposts-draft/</guid>
+      <description>Type conversion operators Type conversion operators are operators that converts an object from one type to another. Here are the logical operators used in C#:
+   Operand Description     (type) Converts a variable from one type to another.   as Same as (type) except it returns null for an invalid conversion instead of an exception.   is Checks if an object is compatiable with another type.</description>
     </item>
     
   </channel>
