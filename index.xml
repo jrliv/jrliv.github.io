@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 14:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jan 2021 17:39:13 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://jrliv.com/about/</link>
+      <pubDate>Fri, 29 Jan 2021 17:39:13 -0400</pubDate>
+      
+      <guid>https://jrliv.com/about/</guid>
+      <description>About me I&amp;rsquo;m currently a full time .NET developer mostly working on Web Forms applications using C# and VB.NET. I also have some experience working on Windows Forms and MVC 5 applications.
+About this website This is my personal website where I blog about things that I learn related to computer science, software development, and technology in general.</description>
+    </item>
     
     <item>
       <title>Visual Studio Missing Start Without Debugging Option</title>
@@ -49,7 +59,7 @@ If you don&amp;rsquo;t know, .NET Conf is a free, 3-day virtual developer event,
       
       <guid>https://jrliv.com/archive/</guid>
       <description>These are all of my blog posts organized by date from the most recent to the oldest. You can also use the tags page to filter posts by a specific tag.
-2020  12/06/2020 - Visual Studio Missing Start Without Debugging Option 11/25/2020 - Differences Between Sites, Applications, and Virtual Directories in IIS 11/18/2020 - What I Learned from .NET Conf 2020 11/05/2020 - How to Redirect to Another URL Path in IIS  2018  01/16/2018 - Assignment Operators in C# 01/12/2018 - Comparison Operators in C#  2017  10/20/2017 - Bitwise Operators in C# 10/06/2017 - Logical Operators in C# 09/25/2017 - Arithmetic Operators in C# 09/20/2017 - Working with Operators in C# 07/26/2017 - What Programming Language Should I Learn First?</description>
+2020  12/06/2020 - Visual Studio Missing Start Without Debugging Option 11/25/2020 - Differences Between Sites, Applications, and Virtual Directories in IIS 11/18/2020 - What I Learned from .NET Conf 2020 11/05/2020 - How to Redirect to Another URL Path in IIS  2019  06/01/2019 - What I&amp;rsquo;ve Been Up To  2018  01/16/2018 - Assignment Operators in C# 01/12/2018 - Comparison Operators in C#  2017  10/20/2017 - Bitwise Operators in C# 10/06/2017 - Logical Operators in C# 09/25/2017 - Arithmetic Operators in C# 09/20/2017 - Working with Operators in C# 07/26/2017 - What Programming Language Should I Learn First?</description>
     </item>
     
     <item>
