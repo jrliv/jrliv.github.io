@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 14:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 23 Dec 2020 10:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.NET Framework Code Execution Process</title>
+      <link>https://jrliv.com/post/dotnet-code-execution-process/</link>
+      <pubDate>Wed, 23 Dec 2020 10:46:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/dotnet-code-execution-process/</guid>
+      <description>&amp;ndash;What is managed and unmanaged code in .NET????
+When you write, compile, and run an application, there&amp;rsquo;s a lot of complex things going on &amp;ldquo;under the hood&amp;rdquo; that most developers aren&amp;rsquo;t able to see or follow. As a developer, I think it&amp;rsquo;s important to know or atleast have an idea of how your applications are compiled and executed. Since I mostly work in the .NET world myself, I&amp;rsquo;m going to explain the typical process that occurs when a .</description>
+    </item>
     
     <item>
       <title>Visual Studio Missing Start Without Debugging Option</title>
@@ -51,6 +61,15 @@ If you don&amp;rsquo;t know, .NET Conf is a free, 3-day virtual developer event,
       <description>In a few steps this post will show how to use HTTP Redirect in IIS to specify rules that can redirect requests to another file path or website.
 Prerequisites  Windows operating system Internet Information Services (IIS)  Steps  Open IIS. In the left pane under &amp;lsquo;Sites&amp;rsquo;, select the Web site or application that you want to redirect from.
  Double click on &amp;lsquo;HTTP Redirect&amp;rsquo; in the main pane under the &amp;lsquo;IIS&amp;rsquo; section:</description>
+    </item>
+    
+    <item>
+      <title>What I&#39;ve Been Up To</title>
+      <link>https://jrliv.com/post/what-ive-been-up-to/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jrliv.com/post/what-ive-been-up-to/</guid>
+      <description>My goal with this website is to document and share everything that I learn related to programming and technology. If you look around, it&amp;rsquo;s obvious that I haven&amp;rsquo;t done much of that since I started this site in May of 2017. I haven&amp;rsquo;t posted or done a thing since January of last year. So in an effort to get things back swinging here, I decided to make a quick post about what I&amp;rsquo;ve been up to in my technical life for the last year and 4 months.</description>
     </item>
     
     <item>
@@ -153,16 +172,6 @@ If you are already setup with Visual Studio or MonoDevelop on your computer, you
       <guid>https://jrliv.com/post/get-started-using-csharp-without-visual-studio/</guid>
       <description>This post will show you how to get started using the C# programming language without installing Visual Studio or any other IDE. C# is a great programming language to learn for anyone new to programming.
 Regardless of the language, most fundamentals behind programming can be practiced and learned using only a text editor and the command line. Using the command line to compile and run code provides a faster way for new programmers to get going.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://jrliv.com/post/operatorblogposts-draft/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jrliv.com/post/operatorblogposts-draft/</guid>
-      <description>Type conversion operators Type conversion operators are operators that converts an object from one type to another. Here are the logical operators used in C#:
-   Operand Description     (type) Converts a variable from one type to another.   as Same as (type) except it returns null for an invalid conversion instead of an exception.   is Checks if an object is compatiable with another type.</description>
     </item>
     
   </channel>

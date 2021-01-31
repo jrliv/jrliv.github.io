@@ -16,7 +16,7 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Comparison Operators in C# - Jae Logan</title>
+    <title>.NET Framework Code Execution Process - Jae Logan</title>
     <meta name="author" content="Jae Logan">
     <meta name="description" content="Jae Logan&#39;s blog and personal website.">
     <meta name="generator" content="Hugo 0.32.4" />
@@ -75,72 +75,26 @@
     
 <article class="post">
     <header>
-        <h1 class="post-title">Comparison Operators in C#</h1>
+        <h1 class="post-title">.NET Framework Code Execution Process</h1>
         <div class="post-meta">
 			
-				<span class="post-date">12 January 2018</span>
+				<span class="post-date">23 December 2020</span>
 			
         </div>
     </header>
 
     <section class="post-content">
-        
+        <p>&ndash;What is managed and unmanaged code in .NET????</p>
 
-<p>Comparison operators are used to compare two operands and return a Boolean result (true or false). They can be used to control the flow of a program by determining if the execution of a conditional statement or loop should stop or continue based on the result of the comparison.</p>
+<p>When you write, compile, and run an application, there&rsquo;s a lot of complex things going on &ldquo;under the hood&rdquo; that most developers aren&rsquo;t able to see or follow. As a developer, I think it&rsquo;s important to know or atleast have an idea of how your applications are compiled and executed. Since I mostly work in the .NET world myself, I&rsquo;m going to explain the typical process that occurs when a .NET application is compiled and executed by the .NET Framework (link to .NET framework????).</p>
 
-<p>Comparison operators are also known as relational operators, as they define the relation between two operands when used.</p>
+<p><a href="https://www.geeksforgeeks.org/cil-or-msil-microsoft-intermediate-language-or-common-intermediate-language/">https://www.geeksforgeeks.org/cil-or-msil-microsoft-intermediate-language-or-common-intermediate-language/</a></p>
 
-<p>If you aren&rsquo;t generally familiar with operators and precedence in programming, then I suggest that you check out my blog post on <a href="https://jrliv.com/post/working-with-operators/" alt="Working with Operators in C#" target="_blank">Working with Operators in C#</a>.</p>
+<p><a href="https://dotnettutorials.net/lesson/dotnet-program-execution-process/">https://dotnettutorials.net/lesson/dotnet-program-execution-process/</a></p>
 
-<p>Here are the comparison operators used in C#:</p>
+<p><a href="https://www.c-sharpcorner.com/UploadFile/8911c4/code-execution-process/">https://www.c-sharpcorner.com/UploadFile/8911c4/code-execution-process/</a></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Operand</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>></td>
-      <td>Greater than operator. If the operand on the left is greater than the operand on the right, then the condition is true.</td>
-    </tr>
-    <tr>
-      <td><</td>
-      <td>Less than operator. If the operand on the left is less than the operand on the right, then the condition is true.</td>
-    </tr>
-      <tr>
-      <td>>=</td>
-      <td>Greater than or equal to operator. If the operand on the left is greater than or equal to the operand on the right, then the condition is true.<</td>
-    </tr>
-    <tr>
-      <td><=</td>
-      <td>Less than or equal to operator. If the operand on the left is less than or equal to the operand on the right, then the condition is true.</td>
-    </tr>
-    <tr>
-      <td>==</td>
-      <td>Equality operator. If both operands are equal, then the condition is true.</td>
-    </tr>
-    <tr>
-      <td>!=</td>
-      <td>Difference operator. If both operands are not equal, then the condition is true.</td>
-    </tr>
-    </tbody>
-</table>
-
-<h3 id="example-using-comparison-operators">Example using comparison operators</h3>
-
-<pre><code>int x = 3;
-int y = 12;
-
-Console.WriteLine(x &gt; y);   //  Output: False
-Console.WriteLine(x &lt; y);   //  Output: True
-Console.WriteLine(x &gt;= y);  //  Output: False
-Console.WriteLine(x &lt;= y);  //  Output: True
-Console.WriteLine(x == y);  //  Output: False
-Console.WriteLine(x != y);  //  Output: True
-</code></pre>
+<p><a href="http://net-informations.com/faq/framework/execution-process.htm">http://net-informations.com/faq/framework/execution-process.htm</a></p>
 
     </section>
 
@@ -153,7 +107,10 @@ Console.WriteLine(x != y);  //  Output: True
                 <a href="https://jrliv.com/tags/programming">programming, </a>
             
                 
-                <a href="https://jrliv.com/tags/csharp">csharp </a>
+                <a href="https://jrliv.com/tags/dotnet">dotnet, </a>
+            
+                
+                <a href="https://jrliv.com/tags/information">information </a>
             
         </div>
     </section>
@@ -181,15 +138,15 @@ Console.WriteLine(x != y);  //  Output: True
     <section class="share">
     <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
     <p class="info prompt">Share</p>
-    <a href="http://twitter.com/share?text=Comparison%20Operators%20in%20C%23&url=https%3a%2f%2fjrliv.com%2fpost%2fcomparison-operators%2f" title="Share on Twitter"
+    <a href="http://twitter.com/share?text=.NET%20Framework%20Code%20Execution%20Process&url=https%3a%2f%2fjrliv.com%2fpost%2fdotnet-code-execution-process%2f" title="Share on Twitter"
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
     </a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fcomparison-operators%2f" title="Share on Facebook"
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fdotnet-code-execution-process%2f" title="Share on Facebook"
         onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
         <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
     </a>
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fcomparison-operators%2f" title="Share on Google+"
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fdotnet-code-execution-process%2f" title="Share on Google+"
        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
     </a>
