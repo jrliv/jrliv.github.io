@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Wed, 23 Dec 2020 10:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 14:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>.NET Framework Code Execution Process</title>
-      <link>https://jrliv.com/post/dotnet-code-execution-process/</link>
-      <pubDate>Wed, 23 Dec 2020 10:46:19 -0400</pubDate>
-      
-      <guid>https://jrliv.com/post/dotnet-code-execution-process/</guid>
-      <description>&amp;ndash;What is managed and unmanaged code in .NET????
-When you write, compile, and run an application, there&amp;rsquo;s a lot of complex things going on &amp;ldquo;under the hood&amp;rdquo; that most developers aren&amp;rsquo;t able to see or follow. As a developer, I think it&amp;rsquo;s important to know or atleast have an idea of how your applications are compiled and executed. Since I mostly work in the .NET world myself, I&amp;rsquo;m going to explain the typical process that occurs when a .</description>
-    </item>
     
     <item>
       <title>Visual Studio Missing Start Without Debugging Option</title>
