@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jrliv.com/post/managed-code-vs-unmanaged-code/</loc>
+    <lastmod>2021-01-31T10:46:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jrliv.com/about/</loc>
     <lastmod>2021-01-29T17:39:13-04:00</lastmod>
   </url>
@@ -100,7 +105,7 @@
   
   <url>
     <loc>https://jrliv.com/tags/dotnet/</loc>
-    <lastmod>2020-12-06T14:46:19-04:00</lastmod>
+    <lastmod>2021-01-31T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -117,8 +122,14 @@
   </url>
   
   <url>
+    <loc>https://jrliv.com/tags/information/</loc>
+    <lastmod>2021-01-31T10:46:19-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jrliv.com/</loc>
-    <lastmod>2021-01-29T17:39:13-04:00</lastmod>
+    <lastmod>2021-01-31T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -136,13 +147,13 @@
   
   <url>
     <loc>https://jrliv.com/post/</loc>
-    <lastmod>2020-12-06T14:46:19-04:00</lastmod>
+    <lastmod>2021-01-31T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jrliv.com/tags/programming/</loc>
-    <lastmod>2019-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-31T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
