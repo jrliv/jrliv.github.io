@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Sun, 31 Jan 2021 10:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 24 Feb 2022 10:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.NET Framework Code Execution Process</title>
+      <link>https://jrliv.com/post/dotnet-code-execution-process/</link>
+      <pubDate>Thu, 24 Feb 2022 10:46:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/dotnet-code-execution-process/</guid>
+      <description>In a previous post I wrote about Managed Code vs Unmanaged Code, and that got me thinking&amp;hellip; when you write, compile, and run an application, there&amp;rsquo;s a lot of things going on under the hood. I think it&amp;rsquo;s important to have an idea of the process so you can better understand how your applications work. Since I mostly work in the .NET world myself, I&amp;rsquo;m going to briefly explain the typical process that occurs when managed .</description>
+    </item>
     
     <item>
       <title>Managed Code vs Unmanaged Code</title>

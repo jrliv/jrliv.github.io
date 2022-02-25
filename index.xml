@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Sun, 31 Jan 2021 10:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 24 Feb 2022 10:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.NET Framework Code Execution Process</title>
+      <link>https://jrliv.com/post/dotnet-code-execution-process/</link>
+      <pubDate>Thu, 24 Feb 2022 10:46:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/dotnet-code-execution-process/</guid>
+      <description>In a previous post I wrote about Managed Code vs Unmanaged Code, and that got me thinking&amp;hellip; when you write, compile, and run an application, there&amp;rsquo;s a lot of things going on under the hood. I think it&amp;rsquo;s important to have an idea of the process so you can better understand how your applications work. Since I mostly work in the .NET world myself, I&amp;rsquo;m going to briefly explain the typical process that occurs when managed .</description>
+    </item>
     
     <item>
       <title>Managed Code vs Unmanaged Code</title>
@@ -68,7 +77,7 @@ If you don&amp;rsquo;t know, .NET Conf is a free, 3-day virtual developer event,
       
       <guid>https://jrliv.com/archive/</guid>
       <description>These are all of my blog posts organized by date from the most recent to the oldest. You can also use the tags page to filter posts by a specific tag.
-2021  01/31/2021 - Managed Code vs Unmanaged Code  2020  12/06/2020 - Visual Studio Missing Start Without Debugging Option 11/25/2020 - Differences Between Sites, Applications, and Virtual Directories in IIS 11/18/2020 - What I Learned from .</description>
+2022  02/24/2022 - .NET Framework Code Execution Process  2021  01/31/2021 - Managed Code vs Unmanaged Code  2020  12/06/2020 - Visual Studio Missing Start Without Debugging Option 11/25/2020 - Differences Between Sites, Applications, and Virtual Directories in IIS 11/18/2020 - What I Learned from .</description>
     </item>
     
     <item>

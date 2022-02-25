@@ -63,7 +63,7 @@
 		
 		<li class="nav nav-current"><a href="/archive">Archive</a></li>
 		
-		<li class="nav nav-current"><a href="/projects">Projects</a></li>
+		
 		
 		<li class="nav nav-current"><a href="/about">About</a></li>
 
@@ -78,23 +78,34 @@
         <h1 class="post-title">.NET Framework Code Execution Process</h1>
         <div class="post-meta">
 			
-				<span class="post-date">23 December 2020</span>
+				<span class="post-date">24 February 2022</span>
 			
         </div>
     </header>
 
     <section class="post-content">
-        <p>&ndash;What is managed and unmanaged code in .NET????</p>
+        
 
-<p>When you write, compile, and run an application, there&rsquo;s a lot of complex things going on &ldquo;under the hood&rdquo; that most developers aren&rsquo;t able to see or follow. As a developer, I think it&rsquo;s important to know or atleast have an idea of how your applications are compiled and executed. Since I mostly work in the .NET world myself, I&rsquo;m going to explain the typical process that occurs when a .NET application is compiled and executed by the .NET Framework (link to .NET framework????).</p>
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1645757057/Blog%20Screenshots/dotNETCodeExecutionProcess.png" alt=".NET Code Execution Process diagram" /></p>
 
-<p><a href="https://www.geeksforgeeks.org/cil-or-msil-microsoft-intermediate-language-or-common-intermediate-language/">https://www.geeksforgeeks.org/cil-or-msil-microsoft-intermediate-language-or-common-intermediate-language/</a></p>
+<p>In a previous post I wrote about <a href="https://jrliv.com/post/managed-code-vs-unmanaged-code/" alt="Managed Code vs Unmanaged Code blog post" target="_blank">Managed Code vs Unmanaged Code</a>, and that got me thinking&hellip; when you write, compile, and run an application, there&rsquo;s a lot of things going on under the hood. I think it&rsquo;s important to have an idea of the process so you can better understand how your applications work. Since I mostly work in the .NET world myself, I&rsquo;m going to briefly explain the typical process that occurs when managed .NET code is compiled and executed by the <a href="https://en.wikipedia.org/wiki/.NET_Framework/" alt=".NET Framework Wikipedia article" target="_blank">.NET Framework</a>.</p>
 
-<p><a href="https://dotnettutorials.net/lesson/dotnet-program-execution-process/">https://dotnettutorials.net/lesson/dotnet-program-execution-process/</a></p>
+<p>One of the main advantages of the .NET Framework is that it allows you to use different .NET programming languages (C#, VB.NET, Visual C++, F#) interactively. It also allows you to run .NET code on different operating systems and CPUs.</p>
 
-<p><a href="https://www.c-sharpcorner.com/UploadFile/8911c4/code-execution-process/">https://www.c-sharpcorner.com/UploadFile/8911c4/code-execution-process/</a></p>
+<h2 id="common-intermediate-language-cil">Common Intermediate Language (CIL)</h2>
 
-<p><a href="http://net-informations.com/faq/framework/execution-process.htm">http://net-informations.com/faq/framework/execution-process.htm</a></p>
+<p>When a .NET application is compiled, the language compiler compiles the .NET source code into <a href="https://en.wikipedia.org/wiki/Common_Intermediate_Language" alt="Common Intermediate Language Wikipedia article" target="_blank">Common Intermediate Language (CIL)</a> first, rather than CPU specific machine code. An assembly file is generated containing the CIL code. The assembly file will have a .dll extension when compiled from a class library or web project or it will have a .exe extension when compiled from a console or desktop application.</p>
+
+<p>It&rsquo;s the CIL code and Common Language Runtime that allows the various .NET languages to be used interactively and run on different operating systems and CPUs.</p>
+
+<h2 id="common-language-runtime-clr">Common Language Runtime (CLR)</h2>
+
+<p>.NET programs are executed from the <a href="https://docs.microsoft.com/en-us/dotnet/standard/clr" alt="Common Language Runtime Microsoft docs article" target="_blank">Common Language Runtime (CLR)</a> virtual machine. The CLR manages the execution of .NET programs and provides services like memory management, type safety, garbage collection, etc.</p>
+
+<h2 id="just-in-time-jit">Just-in-time (JIT)</h2>
+
+<p>The CLR includes a <a href="https://en.wikipedia.org/wiki/Just-in-time_compilation" alt="Just-in-time compilation Wikipedia article" target="_blank">just-in-time
+(JIT)</a> compiler, which compiles code at run time. The JIT compiler in the CLR converts the CIL code into native machine code that can be executed by the CPU.</p>
 
     </section>
 
@@ -185,7 +196,7 @@
       
   </section>
 
-		<section class="copyright">&copy; 2021 <a href="https://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
+		<section class="copyright">&copy; 2022 <a href="https://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
 	</div>
 </footer>
 
