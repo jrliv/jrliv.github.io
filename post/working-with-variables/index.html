@@ -104,8 +104,7 @@
 
 <p>Statements are governed by a defined set of rules that describe how they can be constructed. These rules and conditions are usually known as <i>syntax</i>. Every programming language uses some form of syntax. Some more alike than others. The <u>most important syntax rule</u> in C# is ending all statements with a semicolon (;). For example, the semicolon at the end of this line that prints &ldquo;Hello World!&rdquo; allows the reader, compiler, or computer to know that the statement is over and the next one can be read:</p>
 
-<pre><code>Console.WriteLine(&quot;Hello World!&quot;);
-</code></pre>
+<p><code>Console.WriteLine(&quot;Hello World!&quot;);</code></p>
 
 <p>Before we look at how to declare and use variables it&rsquo;s important to look at their characteristics that are required in the syntax.</p>
 
@@ -123,26 +122,25 @@
 
 <p>The syntax to declare a variable in C# is:</p>
 
-<pre><code>&lt;type&gt; &lt;name&gt; [= &lt;value&gt;];
-</code></pre>
+<p><code>&lt;type&gt; &lt;name&gt; [= &lt;value&gt;];</code></p>
 
 <p>At initial declaration, specifying a value is optional. However in C# the syntax requires that varibles must be assigned a value before they can be used. If you try to use a variable before it is assigned a value your program will not compile. Here is an example of declaring variables:</p>
 
-<pre><code>string firstName;
+<pre><code class="language-c#">string firstName;
 string lastName;
 int age;
 </code></pre>
 
 <p>After you&rsquo;ve declared your variables, you can assign them values. You use the equal sign (=) as the assignment operator (I will cover operators in a future post) to assign the value to the variable. The values are always placed on the right-hand side of the assignment operator. Here is an example:</p>
 
-<pre><code>firstName = &quot;Harry&quot;;
+<pre><code class="language-c#">firstName = &quot;Harry&quot;;
 lastName = &quot;Potter&quot;;
 age = 17;
 </code></pre>
 
 <p>You can declare multiple variables of the same type at once then assign their values:</p>
 
-<pre><code>string firstName, lastName;
+<pre><code class="language-c#">string firstName, lastName;
 int points, assists, rebounds, blocks;
 
 firstName = &quot;Magic&quot;;
@@ -156,7 +154,7 @@ blocks = 3;
 
 <p>You can also assign the same value to multiple variables of the same type:</p>
 
-<pre><code>string firstName, lastName;
+<pre><code class="language-c#">string firstName, lastName;
 int points, assists, rebounds, blocks;
 
 firstName = lastName = &quot;Johnson&quot;;
@@ -167,7 +165,7 @@ points = assists = rebounds = blocks = 3;
 
 <p>In programming the word <i>initialization</i> means to assign a value to a variable at the time it is declared. Here is an example:</p>
 
-<pre><code>string firstName = &quot;Magic&quot;;
+<pre><code class="language-c#">string firstName = &quot;Magic&quot;;
 string lastName = &quot;Johnson&quot;;
 
 int points = 30;
@@ -178,7 +176,7 @@ int blocks = 3;
 
 <p>You can also initialize multiple variables of the same type at once:</p>
 
-<pre><code>int i = 2, j = 4, k = 6;
+<pre><code class="language-c#">int i = 2, j = 4, k = 6;
 char a = '!', b = '@';
 string helloStr = &quot;Hello&quot;, worldStr = &quot;World&quot;;
 </code></pre>
@@ -187,57 +185,55 @@ string helloStr = &quot;Hello&quot;, worldStr = &quot;World&quot;;
 
 <p>There are many different ways that variables can be used. Here is an example of using variables in strings:</p>
 
-<pre><code>//  Declare and initialize string variables
+<pre><code class="language-c#">// Declare and initialize string variables
 string firstName = &quot;Magic&quot;;
 string lastName = &quot;Johnson&quot;;
 
-//  Declare and initialize integer variables
+// Declare and initialize integer variables
 int points = 30;
 int assists = 16;
 int rebounds = 11;
 int blocks = 3;
 
-//  Print the player's name using variables
+// Print the player's name using variables
 Console.WriteLine(&quot;Player: &quot; + firstName + &quot; &quot; + lastName);
 
-//  Print the player's game stats using variables
+// Print the player's game stats using variables
 Console.WriteLine(&quot;Points: &quot; + points + &quot; | Assists: &quot; + assists + 
 &quot; | Rebounds: &quot; + rebounds + &quot; | Blocks: &quot; + blocks);
 
-//  Output:
-//  Player: Magic Johnson
-//  Points: 30 | Assists: 16 | Rebounds: 11 | Blocks: 3
+// Output:
+// Player: Magic Johnson
+// Points: 30 | Assists: 16 | Rebounds: 11 | Blocks: 3
 </code></pre>
 
 <p>This example will show you how to modify the value of a variable, store the result of a calculation in a variable, and print the stored calculations:</p>
 
-<pre><code>//  Define variables
+<pre><code class="language-c#">// Define variables
 int num1 = 3;
 int num2 = 10;
 
-//  Change the value of num1
+// Change the value of num1
 num1 = 5;
 
-//  Create new variables and store results of calculations
+// Create new variables and store results of calculations
 int product = num1 * num2;
 int quotient = num2 / num1;
 int sum = num1 + num2;
 int difference = num1 - num2;
 
-//  Print the results
+// Print the results
 Console.WriteLine(&quot;Product = &quot; + product);
 Console.WriteLine(&quot;Quotient = &quot; + quotient);
 Console.WriteLine(&quot;Sum = &quot; + sum);
 Console.WriteLine(&quot;Difference = &quot; + difference);
 
-//  Output: 
-//  Product = 50
-//  Quotient = 2
-//  Sum = 15
-//  Difference = -5
+// Output: 
+// Product = 50
+// Quotient = 2
+// Sum = 15
+// Difference = -5
 </code></pre>
-
-<p><span id="datatypes"></span></p>
 
 <h2 id="data-types">Data Types</h2>
 
@@ -261,77 +257,77 @@ Console.WriteLine(&quot;Difference = &quot; + difference);
   <thead>
     <tr>
       <th>Name</th>
-      <th>Description</th>
+   <th>Description</th>
       <th>Size</th>
-      <th>Default value</th>
-      <th>Range</th>
-      <th>Example</th>
+   <th>Default value</th>
+   <th>Range</th>
+   <th>Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>int</td>
       <td>Integer numbers</td>
-      <td>32 bits</td>
-      <td>0</td>
-      <td>–2^31 through 2^31 – 1</td>
-      <td>int num = 4;</td>
+   <td>32 bits</td>
+   <td>0</td>
+   <td>–2^31 through 2^31 – 1</td>
+   <td>int num = 4;</td>
     </tr>
-    <tr>
+ <tr>
       <td>long</td>
       <td>Integer numbers (bigger range)</td>
-      <td>64 bits</td>
-      <td>0L</td>
-      <td>–2^63 through 2^63 – 1</td>
-      <td>long num = 55L;</td>
+   <td>64 bits</td>
+   <td>0L</td>
+   <td>–2^63 through 2^63 – 1</td>
+   <td>long num = 55L;</td>
     </tr>
-    <tr>
+ <tr>
       <td>float</td>
       <td>Floating-point numbers</td>
-      <td>32 bits</td>
-      <td>0.0f</td>
-      <td>±1.5 x 10^–45 through ±3.4 x 10^38</td>
-      <td>float num = 0.23F;</td>
+   <td>32 bits</td>
+   <td>0.0f</td>
+   <td>±1.5 x 10^–45 through ±3.4 x 10^38</td>
+   <td>float num = 0.23F;</td>
     </tr>
-    <tr>
+ <tr>
       <td>double</td>
       <td>Double precision floating-point numbers</td>
-      <td>64 bits</td>
-      <td>0.0d</td>
-      <td>±5.0 x 10^–324 through ±1.7 x 10^308</td>
-      <td>double num = 2.5;</td>
+   <td>64 bits</td>
+   <td>0.0d</td>
+   <td>±5.0 x 10^–324 through ±1.7 x 10^308</td>
+   <td>double num = 2.5;</td>
     </tr>
-    <tr>
+ <tr>
       <td>decimal</td>
       <td>Decimal numbers (for financial calculations)</td>
-      <td>128 bits</td>
-      <td>0.0m</td>
-      <td>28 significant figures</td>
-      <td>decimal price = 1.75M;</td>
+   <td>128 bits</td>
+   <td>0.0m</td>
+   <td>28 significant figures</td>
+   <td>decimal price = 1.75M;</td>
     </tr>
-    <tr>
+ <tr>
       <td>string</td>
       <td>Sequence of characters</td>
-      <td>16 bits per char</td>
-      <td>null</td>
-      <td>N/A</td>
-      <td>string name = "Bob";</td>
+   <td>16 bits per char</td>
+   <td>null</td>
+   <td>N/A</td>
+   <td>string name = "Bob";</td>
     </tr>
-    <tr>
+ <tr>
       <td>char</td>
       <td>Single character</td>
-      <td>16 bits</td>
-      <td>'\u0000'</td>
-      <td>0 through 2^16 – 1</td>
-      <td>char ch = '#';</td>
+   <td>16 bits</td>
+   <td>'\u0000'</td>
+   <td>0 through 2^16 – 1</td>
+   <td>char ch = '#';</td>
     </tr>
-    <tr>
+ <tr>
       <td>bool</td>
       <td>Boolean (true or false)</td>
-      <td>8 bits</td>
-      <td>false</td>
-      <td>True or false</td>
-      <td>bool flag = true;</td>
+   <td>8 bits</td>
+   <td>false</td>
+   <td>True or false</td>
+   <td>bool flag = true;</td>
     </tr>
   </tbody>
 </table>

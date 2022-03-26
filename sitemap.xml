@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jrliv.com/post/value-and-reference-types-in-csharp/</loc>
+    <lastmod>2022-03-26T10:46:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jrliv.com/post/visual-studio-2019-webconfig-error/</loc>
     <lastmod>2022-03-02T10:46:19-04:00</lastmod>
   </url>
@@ -109,7 +114,7 @@
   
   <url>
     <loc>https://jrliv.com/tags/csharp/</loc>
-    <lastmod>2018-01-16T07:46:41-04:00</lastmod>
+    <lastmod>2022-03-26T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -133,7 +138,7 @@
   
   <url>
     <loc>https://jrliv.com/tags/information/</loc>
-    <lastmod>2022-02-24T10:46:19-04:00</lastmod>
+    <lastmod>2022-03-26T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -145,7 +150,7 @@
   
   <url>
     <loc>https://jrliv.com/</loc>
-    <lastmod>2022-03-02T10:46:19-04:00</lastmod>
+    <lastmod>2022-03-26T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -163,19 +168,19 @@
   
   <url>
     <loc>https://jrliv.com/post/</loc>
-    <lastmod>2022-03-02T10:46:19-04:00</lastmod>
+    <lastmod>2022-03-26T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jrliv.com/tags/programming/</loc>
-    <lastmod>2022-02-24T10:46:19-04:00</lastmod>
+    <lastmod>2022-03-26T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jrliv.com/tags/</loc>
-    <lastmod>2018-01-16T07:46:41-04:00</lastmod>
+    <lastmod>2022-03-26T10:46:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100003378-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-100003378-1');
+    </script>
+
+    <script data-ad-client="ca-pub-2144632978396387" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Value and Reference Types in C# - Jae Logan</title>
+    <meta name="author" content="Jae Logan">
+    <meta name="description" content="Jae Logan&#39;s blog and personal website.">
+    <meta name="generator" content="Hugo 0.32.4" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- RSS autodiscovery -->
+    
+
+    <link rel="shortcut icon" href="https://jrliv.com/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://jrliv.com/css/screen.css">
+    <link rel="stylesheet" href="https://jrliv.com/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    
+
+    
+
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #3498db;}
+    .pagination a {color: #3498db;}
+    .gist .gist-file .gist-meta a:visited {color: #3498db !important;}
+    a:focus, a:hover {color: #2079b4;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #2079b4;}
+    .older-posts:hover, .newer-posts:hover {color: #2079b4;}
+</style>
+</head>
+
+<body class="home-template">
+    <header id="site-head">
+	
+	<h1 class="blog-title">Jae Logan</a></h1>
+	
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        <li class="nav nav-current"><a href="https://jrliv.com">Blog</a></li>
+		
+		<li class="nav nav-current"><a href="/archive">Archive</a></li>
+		
+		
+		
+		<li class="nav nav-current"><a href="/about">About</a></li>
+
+        
+    </ul>
+</nav>
+    
+    <main class="content" role="main">
+    
+<article class="post">
+    <header>
+        <h1 class="post-title">Value and Reference Types in C#</h1>
+        <div class="post-meta">
+			
+				<span class="post-date">26 March 2022</span>
+			
+        </div>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>The two main categories of types in C# that most objects and variables are categorized under, are <strong>value types</strong> and <strong>reference types</strong>. The main differences between these types are the values and how they are stored in memory. A value type variable directly contains a value that is stored on the <strong>stack</strong>, whereas a reference type variable contains a reference to a value or object that is stored on the <strong>heap</strong>.</p>
+
+<p>If you&rsquo;re new to programming and aren&rsquo;t familiar with variables (or still learning about them), check out a previous post I wrote about <a href="https://jrliv.com/post/working-with-variables/" target="_blank" rel="noreferrer noopener">Working with Variables in C#</a></p>
+
+<h2 id="value-types">Value Types</h2>
+
+<p>Value types are also known as primitive types. They are stored in memory known as the stack, also called the <strong>program execution stack</strong>.</p>
+
+<p>Once a value type variable is defined and initialized in a program, memory is allocated on the stack, and the value is stored directly in the allocated memory until the program has executed the scope that the variable was defined in.</p>
+
+<p>Numeric type (<code>byte</code>, <code>int</code>, <code>double</code>, etc.), character type (<code>char</code>), and Boolean type (<code>bool</code>) variables are all considered to be value types.</p>
+
+<h2 id="reference-types">Reference Types</h2>
+
+<p>Reference types are stored in memory known as the heap, also called <strong>dynamic memory</strong>. They contain a memory address in the stack instead of the actual value. The address is used to reference the allocated memory that&rsquo;s storing the value in the heap. An example of a hypothetical address would be something like <code>0x0094B408</code>.</p>
+
+<p>Classes (<code>class</code>), strings (<code>string</code>), objects (<code>object</code>), arrays etc. are all considered to be reference types.</p>
+
+<p>It&rsquo;s important to note that reference types can contain a special keyword value known as <code>null</code>, which means it does not refer to any object. Null is the default value of a reference type variable when it hasn&rsquo;t been initialized. The null value can also be assigned to a reference type variable.</p>
+
+<p>Another thing also worth mentioning is that reference type variables make it possible for two variables to reference the same value or object. The example below will show how this can be represented in memory.</p>
+
+<h2 id="value-and-reference-types-in-memory">Value and Reference Types in Memory</h2>
+
+<p>As an example, consider a console program is executed that initializes the variables in the code below:</p>
+
+<pre><code class="language-c#">// Value types.
+int i = 100;
+bool success = true;
+
+// Reference types.
+string str = &quot;hello&quot;;
+object objNum = 1;
+object objStr = &quot;one&quot;;
+int[] ints = {4, 2, 1};
+</code></pre>
+
+<p>Once initialized, the values of the variables will be located in memory as shown below:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1648311473/Blog%20Screenshots/variablesInMemory.png" alt="Screenshot of the code variables above in memory." /></p>
+
+<p>As shown, the values of the value type variables are stored in the stack, and the values of the reference type variables are stored in the heap. On the stack, the reference types contain the memory address so it can be used to locate the actual value on the heap.</p>
+
+<p>If the same program executes the following code, the values of the variables will be changed:</p>
+
+<pre><code class="language-c#">// Value types.
+i = 200;
+success = false;
+
+// Reference types.
+str = &quot;world&quot;;
+object obj = objNum;
+objStr = null;
+ints[0] = 3;
+</code></pre>
+
+<p>Once executed, the variables and their values will be located differently in memory as shown below:</p>
+
+<p><img src="https://res.cloudinary.com/jrliv/image/upload/v1648311473/Blog%20Screenshots/variablesInMemory2.png" alt="Screenshot of the code variables above in memory." /></p>
+
+<p>As you can see, there were quite a few changes that occurred.</p>
+
+<p>The changes to the value type variables changed their values on the stack.</p>
+
+<p>Assigning <code>&quot;world&quot;</code> to the variable <code>str</code> resulted in a new object being allocated on the heap to store the new value. The old reference on the stack was changed to the new reference of the allocated memory on the heap. The old object on the heap for the previous value <code>&quot;hello&quot;</code>, will be left behind and eventually disposed by the <a href="https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/" target="_blank" rel="noreferrer noopener">garbage collector</a>.</p>
+
+<p>The variable <code>objNum</code> was not changed, so it contains the same reference address on the stack and same value on the heap. However, a new variable <code>obj</code> was created and assigned <code>objNum</code> as the value. Remember previously I mentioned that multiple reference type variables can reference the same value or object. Here is an example where the variables <code>objNum</code> and <code>obj</code> both reference the same object on the heap since <code>objNum</code> was assigned to the new variable <code>obj</code>.</p>
+
+<p>Next notice that <code>objStr</code> was assigned a <code>null</code> value. This change disconnected the reference to it&rsquo;s previous value <code>&quot;one&quot;</code> and will leave the variable with no value on the stack. Just like the <code>&quot;hello&quot;</code> object, <code>&quot;one&quot;</code> will be left behind on the heap and disposed by the garbage collector.</p>
+
+<p>Lastly you should notice that the change to <code>ints</code> changed the value at position 0 on the heap from <code>4</code> to <code>3</code>, but the reference address remained unchanged as <code>0x746500</code>.</p>
+
+    </section>
+
+    
+    <section class="post-tags" style="padding-bottom:60px;">
+        <div class="post-meta tags">
+            <i class="fa fa-fw fa-tag"></i>
+            
+                
+                <a href="https://jrliv.com/tags/programming">programming, </a>
+            
+                
+                <a href="https://jrliv.com/tags/csharp">csharp, </a>
+            
+                
+                <a href="https://jrliv.com/tags/information">information </a>
+            
+        </div>
+    </section>
+    
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jrliv" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <section class="share">
+    <p class="backtotop"><a data-scroll href="#site-head"><i class="fa fa-lg fa-fw fa-angle-double-up"></i></a><a data-scroll class="backtotoptext" href="#site-head"> Back to top</a></p>
+    <p class="info prompt">Share</p>
+    <a href="http://twitter.com/share?text=Value%20and%20Reference%20Types%20in%20C%23&url=https%3a%2f%2fjrliv.com%2fpost%2fvalue-and-reference-types-in-csharp%2f" title="Share on Twitter"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-2x fa-fw fa-twitter-square"></i> <span class="hidden">Twitter</span>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjrliv.com%2fpost%2fvalue-and-reference-types-in-csharp%2f" title="Share on Facebook"
+        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-2x fa-fw fa-facebook-square" style="margin-left: -8px"></i> <span class="hidden">Facebook</span>
+    </a>
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fjrliv.com%2fpost%2fvalue-and-reference-types-in-csharp%2f" title="Share on Google+"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-2x fa-fw fa-google-plus-square" style="margin-left: -8px"></i> <span class="hidden">Google+</span>
+    </a>
+</section>
+
+    <footer class="post-footer">
+        <section class="author">
+    <div class="authorimage" style="background: url(https://jrliv.com/img/avatar.jpg)"></div>
+    <h4>Jae Logan</h4>
+    <p class="bio">.NET Software Developer</p>
+    <p class="meta">
+      
+    </p>
+</section>
+    </footer>
+    
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+      
+      <a href="//twitter.com/jrl_iv" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+      
+      
+      
+      
+      
+      
+      <a href="//github.com/jrliv" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+      
+      
+      
+      
+  </section>
+
+		<section class="copyright">&copy; 2022 <a href="https://jrliv.com">Jae Logan</a>. Released under the MIT license.</section>
+	</div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://jrliv.com/js/index.js"></script>
+<script src="https://jrliv.com/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+
+
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100003378-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

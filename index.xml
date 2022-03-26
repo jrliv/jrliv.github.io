@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license.</copyright>
-    <lastBuildDate>Wed, 02 Mar 2022 10:46:19 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 26 Mar 2022 10:46:19 -0400</lastBuildDate>
     
 	<atom:link href="https://jrliv.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Value and Reference Types in C#</title>
+      <link>https://jrliv.com/post/value-and-reference-types-in-csharp/</link>
+      <pubDate>Sat, 26 Mar 2022 10:46:19 -0400</pubDate>
+      
+      <guid>https://jrliv.com/post/value-and-reference-types-in-csharp/</guid>
+      <description>The two main categories of types in C# that most objects and variables are categorized under, are value types and reference types. The main differences between these types are the values and how they are stored in memory. A value type variable directly contains a value that is stored on the stack, whereas a reference type variable contains a reference to a value or object that is stored on the heap.</description>
+    </item>
     
     <item>
       <title>Visual Studio 2019 Web.Config Error</title>
