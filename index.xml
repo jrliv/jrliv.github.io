@@ -90,16 +90,6 @@ If you don&amp;rsquo;t know, .NET Conf is a free, 3-day virtual developer event,
     </item>
     
     <item>
-      <title>Archive</title>
-      <link>https://jrliv.com/archive/</link>
-      <pubDate>Wed, 18 Nov 2020 17:39:13 -0400</pubDate>
-      
-      <guid>https://jrliv.com/archive/</guid>
-      <description>These are all of my blog posts organized by date from the most recent to the oldest. You can also use the tags page to filter posts by a specific tag.
-2022  03/02/2022 - Visual Studio 2019 Web.Config Error 02/24/2022 - .NET Framework Code Execution Process  2021  01/31/2021 - Managed Code vs Unmanaged Code  2020  12/06/2020 - Visual Studio Missing Start Without Debugging Option 11/25/2020 - Differences Between Sites, Applications, and Virtual Directories in IIS 11/18/2020 - What I Learned from .</description>
-    </item>
-    
-    <item>
       <title>How to Redirect to Another URL Path in IIS</title>
       <link>https://jrliv.com/post/redirect-to-another-url-in-iis/</link>
       <pubDate>Thu, 05 Nov 2020 20:28:19 -0400</pubDate>
@@ -108,6 +98,16 @@ If you don&amp;rsquo;t know, .NET Conf is a free, 3-day virtual developer event,
       <description>In a few steps this post will show how to use HTTP Redirect in IIS to specify rules that can redirect requests to another file path or website.
 Prerequisites  Windows operating system Internet Information Services (IIS)  Steps  Open IIS. In the left pane under &amp;lsquo;Sites&amp;rsquo;, select the Web site or application that you want to redirect from.
  Double click on &amp;lsquo;HTTP Redirect&amp;rsquo; in the main pane under the &amp;lsquo;IIS&amp;rsquo; section:</description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://jrliv.com/archive/</link>
+      <pubDate>Thu, 26 Mar 2020 17:39:13 -0400</pubDate>
+      
+      <guid>https://jrliv.com/archive/</guid>
+      <description>These are all of my blog posts organized by date from the most recent to the oldest. You can also use the tags page to filter posts by a specific tag.
+2022  03/26/2022 - Value and Reference Types in C# 03/02/2022 - Visual Studio 2019 Web.Config Error 02/24/2022 - .NET Framework Code Execution Process  2021  01/31/2021 - Managed Code vs Unmanaged Code  2020  12/06/2020 - Visual Studio Missing Start Without Debugging Option 11/25/2020 - Differences Between Sites, Applications, and Virtual Directories in IIS 11/18/2020 - What I Learned from .</description>
     </item>
     
     <item>
